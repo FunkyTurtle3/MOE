@@ -205,11 +205,11 @@ public class ArchaeologyMenu extends AbstractContainerMenu {
     public void setupResultSlot(int x) {
         setupRecipeList(inputSlot.getItem());
         if (!Recipes.isEmpty()) {
-            this.container.itemHandler.setStackInSlot(x + 38, getRandomRecipe().assemble(createRecipeInput(inputSlot.getItem()), this.level.registryAccess()));
+            this.container.itemHandler.setStackInSlot(x + 38, getWeightedRecipe().assemble(createRecipeInput(inputSlot.getItem()), this.level.registryAccess()));
         }
     }
 
-    public ArchaeologyRecipe getRandomRecipe() {
+    public ArchaeologyRecipe getWeightedRecipe() {
         if (Recipes.isEmpty()) {
             System.out.println("Empty");
             return null;
