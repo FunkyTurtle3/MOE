@@ -21,6 +21,7 @@ public class KiwiModel<T extends KiwiEntity> extends HierarchicalModel<T> {
 	private final ModelPart head;
 	private final ModelPart beak;
 	private final ModelPart legs;
+
 	private final ModelPart leg_left;
 	private final ModelPart toes_left;
 	private final ModelPart leg_right;
