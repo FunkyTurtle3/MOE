@@ -102,7 +102,7 @@ public class ArchaeologyMenu extends AbstractContainerMenu {
                 return stack.is(MOEItem.ORB_OF_LUCK.get());
             }
         });
-        this.addSlot(new SlotItemHandler(this.container.itemHandler, 57, 152, 54 ) {
+        this.addSlot(new SlotItemHandler(this.container.itemHandler, 57, 152, 72 ) {
             @Override
             public boolean mayPlace(@NotNull ItemStack stack) {
                 return stack.is(MOEItem.ORB_OF_COMPLETION.get());
@@ -204,29 +204,32 @@ public class ArchaeologyMenu extends AbstractContainerMenu {
 
     public void setupResultSlot(int x) {
         setupRecipeList(inputSlot.getItem());
-        if (!Recipes.isEmpty()) {
+        if (!Recipes.isEmpty() && container.itemHandler.getStackInSlot(56).isEmpty()) {
             this.container.itemHandler.setStackInSlot(x + 38, getWeightedRecipe().assemble(createRecipeInput(inputSlot.getItem()), this.level.registryAccess()));
+        } else if(!Recipes.isEmpty()) this.container.itemHandler.setStackInSlot(x + 38, getRandomRecipe().assemble(createRecipeInput(inputSlot.getItem()), this.level.registryAccess()));
+    }
+
+    public ArchaeologyRecipe getRandomRecipe() {
+        if (Recipes.isEmpty()) {
+            return null;
         }
+        return Recipes.get(MOEMath.getRandomRangedInt(0, Recipes.size())).value();
     }
 
     public ArchaeologyRecipe getWeightedRecipe() {
         if (Recipes.isEmpty()) {
-            System.out.println("Empty");
             return null;
         }
         double max = 0;
         for (int i = 0; i < Recipes.size(); i++) {
             max = max + Recipes.get(i).value().getChance();
-            System.out.println(max + "" + i);
         }
         double b = MOEMath.getRandomRangedDouble(0, max);
-        System.out.println(b);
         int i = 0;
         while (Recipes.get(i).value().getChance() < b) {
             b = b - Recipes.get(i).value().getChance();
             i++;
         }
-        System.out.println(Recipes.get(i));
         return Recipes.get(i).value();
     }
     private static SingleRecipeInput createRecipeInput(ItemStack stack) {
