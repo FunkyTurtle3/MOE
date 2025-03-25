@@ -172,23 +172,27 @@ public class ArchaeologyMenu extends AbstractContainerMenu {
         return !inputSlot.hasItem() || this.container.data.get(a) == 1;
     }
     public void select(int a) {
-        setupResultSlot(a);
-        inputSlot.getItem().set(MOEDataComponentTypes.LOCKED.get(), Boolean.TRUE);
-        inputSlot.getItem().setDamageValue(inputSlot.getItem().getDamageValue() + getMaterialDamage());
-        if (!container.itemHandler.getStackInSlot(54).isEmpty()) {
-            container.itemHandler.getStackInSlot(54).setDamageValue(container.itemHandler.getStackInSlot(54).getDamageValue() + 1);
-            if (container.itemHandler.getStackInSlot(54).getDamageValue() == container.itemHandler.getStackInSlot(54).getMaxDamage()) {
-                container.itemHandler.setStackInSlot(54, ItemStack.EMPTY);
-            }
+        if(container.itemHandler.getStackInSlot(57).isEmpty() && 0.2 > Math.random()) {
+            container.itemHandler.setStackInSlot(a, ItemStack.EMPTY);
+        } else {
+            setupResultSlot(a);
         }
-        container.data.set(a, 1);
-        brushSlot.getItem().setDamageValue(brushSlot.getItem().getDamageValue() + getBrushDamage());
-        if(inputSlot.getItem().getDamageValue() == inputSlot.getItem().getMaxDamage()) {
-            inputSlot.set(ItemStack.EMPTY);
-            for (int i = 0; i < 16; i++) {
-                data.set(i, 0);
+            inputSlot.getItem().set(MOEDataComponentTypes.LOCKED.get(), Boolean.TRUE);
+            inputSlot.getItem().setDamageValue(inputSlot.getItem().getDamageValue() + getMaterialDamage());
+            if (!container.itemHandler.getStackInSlot(54).isEmpty()) {
+                container.itemHandler.getStackInSlot(54).setDamageValue(container.itemHandler.getStackInSlot(54).getDamageValue() + 1);
+                if (container.itemHandler.getStackInSlot(54).getDamageValue() == container.itemHandler.getStackInSlot(54).getMaxDamage()) {
+                    container.itemHandler.setStackInSlot(54, ItemStack.EMPTY);
+                }
             }
-        }
+            container.data.set(a, 1);
+            brushSlot.getItem().setDamageValue(brushSlot.getItem().getDamageValue() + getBrushDamage());
+            if (inputSlot.getItem().getDamageValue() == inputSlot.getItem().getMaxDamage()) {
+                inputSlot.set(ItemStack.EMPTY);
+                for (int i = 0; i < 16; i++) {
+                    data.set(i, 0);
+                }
+            }
     }
 
     public int getMaterialDamage() {
@@ -221,8 +225,8 @@ public class ArchaeologyMenu extends AbstractContainerMenu {
             return null;
         }
         double max = 0;
-        for (int i = 0; i < Recipes.size(); i++) {
-            max = max + Recipes.get(i).value().getChance();
+        for (RecipeHolder<ArchaeologyRecipe> recipe : Recipes) {
+            max = max + recipe.value().getChance();
         }
         double b = MOEMath.getRandomRangedDouble(0, max);
         int i = 0;
