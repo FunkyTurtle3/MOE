@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_golden": {
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:gold_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_golden"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "moreofeverything:stone_variants/crafting/golden/golden_shingles",
+      "moreofeverything:stone_variants/crafting/golden/golden_square_bricks",
+      "moreofeverything:stone_variants/crafting/golden/golden_triangle_bricks",
+      "moreofeverything:stone_variants/crafting/golden/golden_compressed_bricks",
+      "moreofeverything:golden_pillar"
+    ]
+  }
+}

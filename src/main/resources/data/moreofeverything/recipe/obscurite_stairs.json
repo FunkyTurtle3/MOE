@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "moreofeverything:obscurite"
+    }
+  },
+  "pattern": [
+    "#",
+    "##",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "moreofeverything:obscurite_stairs"
+  }
+}

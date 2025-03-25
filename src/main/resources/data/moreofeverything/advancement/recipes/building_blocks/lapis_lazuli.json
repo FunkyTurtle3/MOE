@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lapis_lazuli": {
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:lapis_lazuli_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_lapis_lazuli"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "moreofeverything:stone_variants/crafting/lapis_lazuli/lapis_lazuli_shingles",
+      "moreofeverything:stone_variants/crafting/lapis_lazuli/lapis_lazuli_square_bricks",
+      "moreofeverything:stone_variants/crafting/lapis_lazuli/lapis_lazuli_triangle_bricks",
+      "moreofeverything:stone_variants/crafting/lapis_lazuli/lapis_lazuli_compressed_bricks"
+    ]
+  }
+}

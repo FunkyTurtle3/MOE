@@ -1,0 +1,68 @@
+{
+  "catch_entity_in_capture_net": {
+    "subtitles": "sounds.moreofeverything.catch_entity_in_capture_net",
+    "sounds": [
+      "moreofeverything:catch_entity_in_capture_net"
+    ]
+  },
+  "no_time_to_wait": {
+    "subtitles": "sounds.moreofeverything.no_time_to_wait",
+    "sounds": [
+      {
+        "name":"moreofeverything:no_time_to_wait",
+        "stream": true
+      }
+    ]
+  },
+  "obscurite_break": {
+    "subtitles": "sounds.moreofeverything.obscurite_break",
+    "sounds": [
+      {
+        "name":"moreofeverything:obscurite_break_1",
+        "stream": true
+      },
+      {
+        "name":"moreofeverything:obscurite_break_2",
+        "stream": true
+      },
+      {
+        "name":"moreofeverything:obscurite_break_3",
+        "stream": true
+      },
+      {
+        "name":"moreofeverything:obscurite_break_4",
+        "stream": true
+      }
+    ]
+  },
+  "obscurite_step": {
+    "subtitles": "sounds.moreofeverything.obscurite_step",
+    "sounds": [
+      {
+        "name":"moreofeverything:obscurite_step_1",
+        "stream": true
+      },
+      {
+        "name":"moreofeverything:obscurite_step_2",
+        "stream": true
+      },
+      {
+        "name":"moreofeverything:obscurite_step_3",
+        "stream": true
+      }
+    ]
+  },
+  "obscurite_place": {
+    "subtitles": "sounds.moreofeverything.obscurite_place",
+    "sounds": [
+      {
+        "name":"moreofeverything:obscurite_place_1",
+        "stream": true
+      },
+      {
+        "name":"moreofeverything:obscurite_place_2",
+        "stream": true
+      }
+    ]
+  }
+}

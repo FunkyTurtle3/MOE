@@ -1,0 +1,19 @@
+{
+  "values": [
+    "moreofeverything:copper_lantern",
+    "moreofeverything:exposed_copper_lantern",
+    "moreofeverything:weathered_copper_lantern",
+    "moreofeverything:oxidized_copper_lantern",
+    "moreofeverything:copper_chain",
+    "moreofeverything:exposed_copper_chain",
+    "moreofeverything:weathered_copper_chain",
+    "moreofeverything:oxidized_copper_chain",
+    "moreofeverything:copper_pressure_plate",
+    "moreofeverything:copper_button",
+    "moreofeverything:oxidizer",
+    "moreofeverything:deoxidizer",
+    "#moreofeverything:obscurite_full_blocks",
+    "#moreofeverything:stone_variants",
+    "moreofeverything:azurine_bricks"
+  ]
+}

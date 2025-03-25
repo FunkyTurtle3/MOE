@@ -1,0 +1,39 @@
+{
+  "temperature": 0.3,
+  "downfall": 0,
+  "has_precipitation": false,
+  "temperature_modifier": "none",
+  "effects": {
+    "sky_color": 4472712,
+    "fog_color": 3091540,
+    "water_color": 2898004,
+    "water_fog_color": 1845056,
+    "grass_color": 4143716,
+    "foliage_color": 3485780,
+    "particle": {
+      "options": {
+        "type": "minecraft:ash"
+      },
+      "probability": 1
+    }
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "minecraft:bat",
+        "weight": 1,
+        "minCount": 0,
+        "maxCount": 0
+      }
+    ]
+  },
+  "spawn_costs": {},
+  "surface_builder": "moreofeverything:cursed_lands",
+  "carvers": {},
+  "features": [
+    [
+      "minecraft:chorus_plant",
+      "minecraft:disk_clay"
+    ]
+  ]
+}

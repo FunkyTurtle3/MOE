@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:block/cube_column_horizontal",
+	"textures": {
+		"end": "moreofeverything:block/triangle_bricks/top/dripstone_triangle_bricks_top",
+		"side": "moreofeverything:block/triangle_bricks/dripstone_triangle_bricks"
+	}
+}

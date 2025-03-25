@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "moreofeverything:tuff_square_bricks"
+    }
+  },
+  "result": {
+    "id": "moreofeverything:tuff_compressed_bricks",
+    "count": 4
+  }
+}

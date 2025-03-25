@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:block/cube_column_horizontal",
+	"textures": {
+		"end": "moreofeverything:block/triangle_bricks/top/lapis_lazuli_triangle_bricks_top",
+		"side": "moreofeverything:block/triangle_bricks/lapis_lazuli_triangle_bricks"
+	}
+}

@@ -1,0 +1,10 @@
+{
+  "asset_name": "echo",
+  "decal": false,
+  "description": {
+    "color": "#0a5060",
+    "translate": "trim.materials.moreofeverything.echo"
+  },
+  "ingredient": "minecraft:echo_shard",
+  "item_model_index": 0.196969
+}

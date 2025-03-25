@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_packed_mud": {
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:packed_mud"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_packed_mud"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "moreofeverything:stone_variants/crafting/packed_mud/packed_mud_shingles",
+      "moreofeverything:stone_variants/crafting/packed_mud/packed_mud_square_bricks",
+      "moreofeverything:stone_variants/crafting/packed_mud/packed_mud_triangle_bricks",
+      "moreofeverything:stone_variants/crafting/packed_mud/packed_mud_compressed_bricks",
+      "moreofeverything:packed_mud_pillar"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:block/cube_all",
+	"textures": {
+		"all": "moreofeverything:block/square_bricks/lapis_lazuli_square_bricks"
+	}
+}

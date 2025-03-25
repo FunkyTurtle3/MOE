@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_obscurite": {
+      "conditions": {
+        "items": [
+          {
+            "item": "moreofeverything:obscurite_blocks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_obscurite"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "moreofeverything:obscurite_bricks",
+      "moreofeverything:polished_obscurite",
+      "moreofeverything:stone_variants/crafting/obscurite/obscurite_shingles",
+      "moreofeverything:stone_variants/crafting/obscurite/obscurite_square_bricks",
+      "moreofeverything:stone_variants/crafting/obscurite/obscurite_triangle_bricks",
+      "moreofeverything:stone_variants/crafting/obscurite/obscurite_compressed_bricks",
+      "moreofeverything:chiseled_obscurite"
+    ]
+  }
+}

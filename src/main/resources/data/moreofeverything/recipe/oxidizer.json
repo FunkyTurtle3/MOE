@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:lightning_rod"
+    },
+    "&": {
+      "item": "minecraft:iron_ingot"
+    },
+    "%": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "pattern": [
+    "# #",
+    "&%&"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moreofeverything:oxidizer"
+  }
+}

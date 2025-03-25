@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:purpur_block"
+    }
+  },
+  "result": {
+    "id": "moreofeverything:purpur_shingles",
+    "count": 4
+  }
+}

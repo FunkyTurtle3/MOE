@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "moreofeverything:block/fir_slab"
+    },
+    "type=double": {
+      "model": "moreofeverything:block/fir_planks"
+    },
+    "type=top": {
+      "model": "moreofeverything:block/fir_slab_top"
+    }
+  }
+}

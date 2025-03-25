@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:block/cube_all",
+	"textures": {
+		"all": "moreofeverything:block/compressed_bricks/tuff_compressed_bricks"
+	}
+}

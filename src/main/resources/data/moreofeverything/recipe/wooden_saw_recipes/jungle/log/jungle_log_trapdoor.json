@@ -1,0 +1,10 @@
+{
+  "type": "moreofeverything:wood_saw_recipe",
+  "ingredient": {
+    "item": "minecraft:jungle_log"
+  },
+  "result": {
+    "id": "minecraft:jungle_trapdoor",
+    "count": 4
+  }
+}

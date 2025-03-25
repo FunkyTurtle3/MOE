@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "moreofeverything:red_sandstone_square_bricks"
+    }
+  },
+  "result": {
+    "id": "moreofeverything:red_sandstone_compressed_bricks",
+    "count": 4
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:nope",
+  "config": {
+    "top_material": {
+      "Name": "minecraft:moss_block",
+      "Properties": {
+        "snowy": "false"
+      }
+    },
+    "under_material": {
+      "Name": "minecraft:andesite"
+    },
+    "underwater_material": {
+      "Name": "minecraft:granite"
+    }
+  }
+}

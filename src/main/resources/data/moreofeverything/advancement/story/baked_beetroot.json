@@ -1,0 +1,33 @@
+{
+  "parent": "moreofeverything:story/baked_carrot",
+  "criteria": {
+    "baked_beetroot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moreofeverything:baked_beetroot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moreofeverything.baked_beetroot.des"
+    },
+    "icon": {
+      "count": 1,
+      "id": "moreofeverything:baked_beetroot"
+    },
+    "title": {
+      "translate": "advancements.moreofeverything.baked_beetroot"
+    }
+  },
+  "requirements": [
+    [
+      "baked_beetroot"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

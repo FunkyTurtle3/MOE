@@ -1,0 +1,33 @@
+{
+  "parent": "moreofeverything:story/moe_root",
+  "criteria": {
+    "obscurite": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moreofeverything:obscurite"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moreofeverything.obscurite.des"
+    },
+    "icon": {
+      "count": 1,
+      "id": "moreofeverything:obscurite"
+    },
+    "title": {
+      "translate": "advancements.moreofeverything.obscurite"
+    }
+  },
+  "requirements": [
+    [
+      "obscurite"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

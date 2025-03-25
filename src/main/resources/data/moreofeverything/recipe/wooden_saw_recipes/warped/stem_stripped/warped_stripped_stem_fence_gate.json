@@ -1,0 +1,10 @@
+{
+  "type": "moreofeverything:wood_saw_recipe",
+  "ingredient": {
+    "item": "minecraft:stripped_warped_stem"
+  },
+  "result": {
+    "id": "minecraft:warped_fence_gate",
+    "count": 4
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "moreofeverything:oxidized_copper_ingot"
+    },
+    "X": {
+      "item": "moreofeverything:oxidized_copper_nugget"
+    }
+  },
+  "pattern": [
+    "X",
+    "#",
+    "X"
+  ],
+  "result": {
+    "count": 4,
+    "id": "moreofeverything:oxidized_copper_chain"
+  }
+}

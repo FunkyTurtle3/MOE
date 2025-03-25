@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:block/cube_all",
+	"textures": {
+		"all": "moreofeverything:block/shingles/red_sandstone_shingles"
+	}
+}

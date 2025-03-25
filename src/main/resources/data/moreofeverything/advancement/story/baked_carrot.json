@@ -1,0 +1,33 @@
+{
+  "parent": "moreofeverything:story/moe_root",
+  "criteria": {
+    "baked_carrot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moreofeverything:baked_carrot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moreofeverything.baked_carrot.des"
+    },
+    "icon": {
+      "count": 1,
+      "id": "moreofeverything:baked_carrot"
+    },
+    "title": {
+      "translate": "advancements.moreofeverything.baked_carrot"
+    }
+  },
+  "requirements": [
+    [
+      "baked_carrot"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

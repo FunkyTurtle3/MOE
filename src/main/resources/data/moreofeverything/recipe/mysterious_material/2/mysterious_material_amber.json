@@ -1,0 +1,10 @@
+{
+  "type": "moreofeverything:archaeology_recipe",
+  "ingredient": {
+    "item": "moreofeverything:mysterious_material_2"
+  },
+  "result": {
+    "id": "moreofeverything:pulsite",
+    "count": 5
+  }
+}

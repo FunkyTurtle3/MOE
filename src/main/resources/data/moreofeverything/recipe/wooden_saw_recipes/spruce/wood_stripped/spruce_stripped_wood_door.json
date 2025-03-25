@@ -1,0 +1,10 @@
+{
+  "type": "moreofeverything:wood_saw_recipe",
+  "ingredient": {
+    "item": "minecraft:stripped_spruce_wood"
+  },
+  "result": {
+    "id": "minecraft:spruce_door",
+    "count": 4
+  }
+}

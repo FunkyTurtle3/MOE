@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "moreofeverything:block/oxidizer",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "moreofeverything:block/oxidizer",
+      "y": 0
+    },
+    "facing=south": {
+      "model": "moreofeverything:block/oxidizer",
+      "y": 0
+    },
+    "facing=west": {
+      "model": "moreofeverything:block/oxidizer",
+      "y": 90
+    }
+  }
+}

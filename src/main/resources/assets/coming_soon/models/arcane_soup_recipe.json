@@ -1,0 +1,6 @@
+{
+  "parent": "moreofeverything:item/soup_recipe",
+  "textures": {
+    "0": "moreofeverything:item/uncommon_soup_recipe"
+  }
+}

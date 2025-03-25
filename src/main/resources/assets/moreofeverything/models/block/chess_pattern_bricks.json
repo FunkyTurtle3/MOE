@@ -1,0 +1,12 @@
+{
+	"parent": "minecraft:block/cube_all",
+	"textures": {
+		"up": "moreofeverything:block/chess_pattern_bricks",
+		"down": "moreofeverything:block/chess_pattern_bricks",
+		"east": "moreofeverything:block/chess_pattern_bricks",
+		"west": "moreofeverything:block/chess_pattern_bricks",
+		"north": "moreofeverything:block/chess_pattern_bricks_n_s",
+		"south": "moreofeverything:block/chess_pattern_bricks_n_s",
+		"particle": "moreofeverything:block/chess_pattern_bricks"
+	}
+}

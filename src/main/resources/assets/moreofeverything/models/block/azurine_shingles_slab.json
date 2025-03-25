@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "moreofeverything:block/shingles/azurine_shingles",
+    "side": "moreofeverything:block/shingles/azurine_shingles",
+    "top": "moreofeverything:block/shingles/azurine_shingles"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "moreofeverything:wood_saw_recipe",
+  "ingredient": {
+    "item": "minecraft:crimson_stem"
+  },
+  "result": {
+    "id": "minecraft:crimson_stairs",
+    "count": 4
+  }
+}

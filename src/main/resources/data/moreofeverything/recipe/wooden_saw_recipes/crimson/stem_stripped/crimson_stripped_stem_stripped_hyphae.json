@@ -1,0 +1,10 @@
+{
+  "type": "moreofeverything:wood_saw_recipe",
+  "ingredient": {
+    "item": "minecraft:stripped_crimson_stem"
+  },
+  "result": {
+    "id": "minecraft:stripped_crimson_hyphae",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "moreofeverything:granite_square_bricks"
+    }
+  },
+  "result": {
+    "id": "moreofeverything:granite_compressed_bricks",
+    "count": 4
+  }
+}

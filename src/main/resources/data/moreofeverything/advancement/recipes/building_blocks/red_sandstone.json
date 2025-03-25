@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_red_sandstone": {
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:red_sandstone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_red_sandstone"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "moreofeverything:stone_variants/crafting/red_sandstone/red_sandstone_shingles",
+      "moreofeverything:stone_variants/crafting/red_sandstone/red_sandstone_square_bricks",
+      "moreofeverything:stone_variants/crafting/red_sandstone/red_sandstone_triangle_bricks",
+      "moreofeverything:stone_variants/crafting/red_sandstone/red_sandstone_compressed_bricks"
+    ]
+  }
+}

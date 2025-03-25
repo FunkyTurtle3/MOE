@@ -1,0 +1,6 @@
+{
+  "parent": "moreofeverything:item/soup_recipe",
+  "textures": {
+    "0": "moreofeverything:item/epic_soup_recipe"
+  }
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:block/cube_column_horizontal",
+	"textures": {
+		"end": "moreofeverything:block/carved_planks/top/oak_carved_planks_top",
+		"side": "moreofeverything:block/carved_planks/oak_carved_planks"
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"parent": "minecraft:block/cube_all",
+	"textures": {
+		"up": "moreofeverything:block/temple_pillar_end_with_tail",
+		"down": "moreofeverything:block/temple_pillar_end_middle",
+		"east": "moreofeverything:block/temple_pillar_middle",
+		"west": "moreofeverything:block/temple_pillar_middle",
+		"north": "moreofeverything:block/temple_pillar_middle",
+		"south": "moreofeverything:block/temple_pillar_middle",
+		"particle": "moreofeverything:block/temple_pillar_middle"
+	}
+}

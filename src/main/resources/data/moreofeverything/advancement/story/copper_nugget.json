@@ -1,0 +1,33 @@
+{
+  "parent": "moreofeverything:story/moe_root",
+  "criteria": {
+    "nugget": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moreofeverything:copper_nugget"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moreofeverything.copper_nugget.des"
+    },
+    "icon": {
+      "count": 1,
+      "id": "moreofeverything:copper_nugget"
+    },
+    "title": {
+      "translate": "advancements.moreofeverything.copper_nugget"
+    }
+  },
+  "requirements": [
+    [
+      "nugget"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

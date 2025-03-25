@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "moreofeverything:block/wood_saw",
+      "y": 180
+    },
+    "facing=north": {
+      "model": "moreofeverything:block/wood_saw",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "moreofeverything:block/wood_saw",
+      "y": 270
+    },
+    "facing=west": {
+      "model": "moreofeverything:block/wood_saw",
+      "y": 0
+    }
+  }
+}

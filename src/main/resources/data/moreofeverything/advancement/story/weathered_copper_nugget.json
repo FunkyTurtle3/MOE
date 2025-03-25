@@ -1,0 +1,33 @@
+{
+  "parent": "moreofeverything:story/exposed_copper_nugget",
+  "criteria": {
+    "nugget": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moreofeverything:weathered_copper_nugget"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moreofeverything.weathered_copper_nugget.des"
+    },
+    "icon": {
+      "count": 1,
+      "id": "moreofeverything:weathered_copper_nugget"
+    },
+    "title": {
+      "translate": "advancements.moreofeverything.weathered_copper_nugget"
+    }
+  },
+  "requirements": [
+    [
+      "nugget"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

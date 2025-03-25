@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:blackstone"
+    }
+  },
+  "result": {
+    "id": "moreofeverything:blackstone_shingles",
+    "count": 4
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_endstone": {
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:end_stone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_endstone"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "moreofeverything:stone_variants/crafting/endstone/endstone_shingles",
+      "moreofeverything:stone_variants/crafting/endstone/endstone_square_bricks",
+      "moreofeverything:stone_variants/crafting/endstone/endstone_triangle_bricks",
+      "moreofeverything:stone_variants/crafting/endstone/endstone_compressed_bricks",
+      "moreofeverything:endstone_pillar"
+    ]
+  }
+}

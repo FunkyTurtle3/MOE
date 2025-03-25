@@ -1,0 +1,19 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "moreofeverything:azurine"
+    }
+  ],
+  "processingTime": 250,
+  "results": [
+    {
+      "chance": 4,
+      "item": "moreofeverything:azurine_dust"
+    },
+    {
+      "chance": 0.05,
+      "item": "minecraft:diamond"
+    }
+  ]
+}

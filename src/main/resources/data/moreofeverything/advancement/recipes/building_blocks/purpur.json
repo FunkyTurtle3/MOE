@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_purpur": {
+      "conditions": {
+        "items": [
+          {
+            "item": "moreofeverything:purpur_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_purpur"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "moreofeverything:stone_variants/crafting/purpur/purpur_shingles",
+      "moreofeverything:stone_variants/crafting/purpur/purpur_square_bricks",
+      "moreofeverything:stone_variants/crafting/purpur/purpur_triangle_bricks",
+      "moreofeverything:stone_variants/crafting/purpur/purpur_compressed_bricks"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "parent": "moreofeverything:story/weathered_copper_ingot",
+  "criteria": {
+    "ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moreofeverything:oxidized_copper_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moreofeverything.oxidized_copper_ingot.des"
+    },
+    "icon": {
+      "count": 1,
+      "id": "moreofeverything:oxidized_copper_ingot"
+    },
+    "title": {
+      "translate": "advancements.moreofeverything.oxidized_copper_ingot"
+    }
+  },
+  "requirements": [
+    [
+      "ingot"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

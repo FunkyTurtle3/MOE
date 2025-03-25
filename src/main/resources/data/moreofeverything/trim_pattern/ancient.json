@@ -1,0 +1,8 @@
+{
+  "asset_id": "moreofeverything:ancient",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.moreofeverything.ancient"
+  },
+  "template_item": "moreofeverything:ancient_armor_trim_smithing_template"
+}

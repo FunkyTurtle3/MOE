@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "minecraft:carrot"
+  },
+  "result": {
+    "id": "moreofeverything:baked_carrot"
+  },
+  "experience": 3,
+  "cookingtime": 200
+}

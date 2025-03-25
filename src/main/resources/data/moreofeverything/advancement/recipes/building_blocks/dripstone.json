@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dripstone": {
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:dripstone_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_dripstone"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "moreofeverything:stone_variants/crafting/dripstone/dripstone_shingles",
+      "moreofeverything:stone_variants/crafting/dripstone/dripstone_square_bricks",
+      "moreofeverything:stone_variants/crafting/dripstone/dripstone_triangle_bricks",
+      "moreofeverything:stone_variants/crafting/dripstone/dripstone_compressed_bricks"
+    ]
+  }
+}

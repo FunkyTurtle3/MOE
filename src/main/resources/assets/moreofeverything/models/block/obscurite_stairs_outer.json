@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "moreofeverything:block/obscurite_top",
+    "side": "moreofeverything:block/obscurite_side",
+    "top": "moreofeverything:block/obscurite_top"
+  }
+}

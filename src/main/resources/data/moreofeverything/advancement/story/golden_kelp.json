@@ -1,0 +1,33 @@
+{
+  "parent": "moreofeverything:story/baked_beetroot",
+  "criteria": {
+    "golden_kelp": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moreofeverything:golden_kelp"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moreofeverything.golden_kelp.des"
+    },
+    "icon": {
+      "count": 1,
+      "id": "moreofeverything:golden_kelp"
+    },
+    "title": {
+      "translate": "advancements.moreofeverything.golden_kelp"
+    }
+  },
+  "requirements": [
+    [
+      "golden_kelp"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

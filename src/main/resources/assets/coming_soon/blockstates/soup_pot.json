@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "color=1": {
+      "model": "moreofeverything:block/soup_pot"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "comparator_output": 1,
+  "description": {
+    "translate": "item.moreofeverything.no_time_to_wait_music_disc.desc"
+  },
+  "length_in_seconds": 111.0,
+  "sound_event": "moreofeverything:no_time_to_wait"
+}

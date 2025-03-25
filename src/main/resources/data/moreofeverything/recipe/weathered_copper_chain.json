@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "moreofeverything:weathered_copper_ingot"
+    },
+    "X": {
+      "item": "moreofeverything:weathered_copper_nugget"
+    }
+  },
+  "pattern": [
+    "X",
+    "#",
+    "X"
+  ],
+  "result": {
+    "count": 4,
+    "id": "moreofeverything:weathered_copper_chain"
+  }
+}

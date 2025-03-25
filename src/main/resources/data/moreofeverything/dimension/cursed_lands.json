@@ -1,0 +1,24 @@
+{
+  "type": "moreofeverything:cursed_lands",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "minecraft:overworld",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "moreofeverything:cursed_forest",
+          "parameters": {
+            "temperature": 1,
+            "humidity": 1,
+            "continentalness": 1,
+            "erosion": 1,
+            "weirdness": 1,
+            "depth": 1,
+            "offset": 1
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    " # ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "moreofeverything:obscurite"
+    }
+  },
+  "result": {
+    "id": "moreofeverything:obscurite_triangle_bricks",
+    "count": 4
+  }
+}

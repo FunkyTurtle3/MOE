@@ -1,0 +1,10 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "moreofeverything:item/bottle_of_stability_essence"
+  },
+  "overrides": [
+    { "predicate": { "emptied": 1 }, "model": "moreofeverything:item/bottle_of_stability_essence_1" },
+    { "predicate": { "emptied": 2 }, "model": "moreofeverything:item/bottle_of_stability_essence_2" }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "moreofeverything:block/aged_sand_bricks",
+    "side": "moreofeverything:block/aged_sand_bricks",
+    "top": "moreofeverything:block/aged_sand_bricks"
+  }
+}

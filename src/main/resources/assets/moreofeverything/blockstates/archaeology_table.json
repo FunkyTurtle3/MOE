@@ -1,0 +1,19 @@
+{
+	"variants": {
+		"facing=north": {
+			"model": "moreofeverything:block/archaeology_table"
+		},
+		"facing=east": {
+			"model": "moreofeverything:block/archaeology_table",
+			"y": 90
+		},
+		"facing=south": {
+			"model": "moreofeverything:block/archaeology_table",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "moreofeverything:block/archaeology_table",
+			"y": 270
+		}
+	}
+}

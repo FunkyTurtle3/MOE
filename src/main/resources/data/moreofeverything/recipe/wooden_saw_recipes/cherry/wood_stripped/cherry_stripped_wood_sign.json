@@ -1,0 +1,10 @@
+{
+  "type": "moreofeverything:wood_saw_recipe",
+  "ingredient": {
+    "item": "minecraft:stripped_cherry_wood"
+  },
+  "result": {
+    "id": "minecraft:cherry_sign",
+    "count": 4
+  }
+}

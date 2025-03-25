@@ -1,0 +1,33 @@
+{
+  "parent": "moreofeverything:story/baked_beetroot",
+  "criteria": {
+    "golden_beetroot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moreofeverything:golden_beetroot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moreofeverything.golden_beetroot.des"
+    },
+    "icon": {
+      "count": 1,
+      "id": "moreofeverything:golden_beetroot"
+    },
+    "title": {
+      "translate": "advancements.moreofeverything.golden_beetroot"
+    }
+  },
+  "requirements": [
+    [
+      "golden_beetroot"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

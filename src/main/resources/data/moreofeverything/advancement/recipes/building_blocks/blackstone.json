@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_blackstone": {
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:blackstone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_blackstone"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "moreofeverything:stone_variants/crafting/blackstone/blackstone_shingles",
+      "moreofeverything:stone_variants/crafting/blackstone/blackstone_square_bricks",
+      "moreofeverything:stone_variants/crafting/blackstone/blackstone_triangle_bricks",
+      "moreofeverything:stone_variants/crafting/blackstone/blackstone_compressed_bricks",
+      "moreofeverything:blackstone_pillar"
+    ]
+  }
+}

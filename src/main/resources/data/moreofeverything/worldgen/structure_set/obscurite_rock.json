@@ -1,0 +1,17 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 1170592918,
+    "frequency_reduction_method": "default",
+    "frequency": 1,
+    "spread_type": "triangular",
+    "spacing": 4,
+    "separation": 2
+  },
+  "structures": [
+    {
+      "structure": "moreofeverything:obscurite_rock",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_diamond": {
+      "conditions": {
+        "items": [
+          {
+            "item": "moreofeverything:diamond_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_diamond"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "moreofeverything:stone_variants/crafting/diamond/diamond_shingles",
+      "moreofeverything:stone_variants/crafting/diamond/diamond_square_bricks",
+      "moreofeverything:stone_variants/crafting/diamond/diamond_triangle_bricks",
+      "moreofeverything:stone_variants/crafting/diamond/diamond_compressed_bricks",
+      "moreofeverything:diamond_pillar"
+    ]
+  }
+}

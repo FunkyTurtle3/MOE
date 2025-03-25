@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:block/cube_column_horizontal",
+	"textures": {
+		"end": "moreofeverything:block/triangle_bricks/top/packed_mud_triangle_bricks_top",
+		"side": "moreofeverything:block/triangle_bricks/packed_mud_triangle_bricks"
+	}
+}

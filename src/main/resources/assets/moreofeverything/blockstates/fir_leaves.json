@@ -1,0 +1,26 @@
+{
+	"variants": {
+		"": [ {
+			"model": "moreofeverything:block/fir_leaves/0"
+		},
+		{
+			"model": "moreofeverything:block/fir_leaves/1"
+		},
+		{
+			"model": "moreofeverything:block/fir_leaves/2"
+		},
+		{
+			"model": "moreofeverything:block/fir_leaves/3"
+		},
+		{
+			"model": "moreofeverything:block/fir_leaves/4"
+		},
+		{
+			"model": "moreofeverything:block/fir_leaves/5"
+		},
+		{
+			"model": "moreofeverything:block/fir_leaves/6"
+		}
+		]
+	}
+}

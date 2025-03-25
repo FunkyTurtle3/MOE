@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:block/cube_all",
+	"textures": {
+		"all": "moreofeverything:block/square_bricks/dark_prismarine_square_bricks"
+	}
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "minecraft:planks"
+    },
+    "X": {
+      "item": "minecraft:brush"
+    },
+    "%": {
+      "item": "minecraft:bone"
+    }
+  },
+  "pattern": [
+    "X%",
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 1,
+    "id": "moreofeverything:archaeology_table"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "parent": "moreofeverything:story/moe_root",
+  "criteria": {
+    "azurine": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moreofeverything:azurine"
+          },
+          {
+            "items": "moreofeverything:azurine_dust"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moreofeverything.azurine.des"
+    },
+    "icon": {
+      "count": 1,
+      "id": "moreofeverything:azurine_dust"
+    },
+    "title": {
+      "translate": "advancements.moreofeverything.azurine"
+    }
+  },
+  "requirements": [
+    [
+      "azurine"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

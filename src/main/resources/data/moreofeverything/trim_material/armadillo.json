@@ -1,0 +1,10 @@
+{
+  "asset_name": "armadillo",
+  "decal": false,
+  "description": {
+    "color": "#824848",
+    "translate": "trim.materials.moreofeverything.armadillo"
+  },
+  "ingredient": "minecraft:armadillo_scute",
+  "item_model_index": 0.196971
+}

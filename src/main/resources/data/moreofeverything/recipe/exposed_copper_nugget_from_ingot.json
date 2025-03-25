@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "moreofeverything:exposed_copper_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "moreofeverything:exposed_copper_nugget"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    " # ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "moreofeverything:azurine"
+    }
+  },
+  "result": {
+    "id": "moreofeverything:azurine_triangle_bricks",
+    "count": 4
+  }
+}

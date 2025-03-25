@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    " % ",
+    "$X$",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stone"
+    },
+    "%": {
+      "item": "minecraft:redstone_torch"
+    },
+    "X": {
+      "item": "minecraft:copper_ingot"
+    },
+    "$": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "id": "moreofeverything:or_gate",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    " # ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:gold_block"
+    }
+  },
+  "result": {
+    "id": "moreofeverything:gold_triangle_bricks",
+    "count": 4
+  }
+}

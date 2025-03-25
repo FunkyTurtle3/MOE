@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:cobblestone"
+    },
+    {
+      "item": "minecraft:cobblestone"
+    },
+    {
+      "item": "moreofeverything:obscurite"
+    },
+    {
+      "item": "moreofeverything:obscurite"
+    }
+  ],
+  "result": {
+    "id": "moreofeverything:obscurite",
+    "count": 3
+  }
+}

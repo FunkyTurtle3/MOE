@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_rail_raised_ne",
+  "textures": {
+    "rail": "moreofeverything:block/super_powered_rail_on"
+  },
+  "render_type": "minecraft:cutout"
+}

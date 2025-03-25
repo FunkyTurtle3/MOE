@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "moreofeverything:block/exposed_copper_chain",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "moreofeverything:block/exposed_copper_chain"
+    },
+    "axis=z": {
+      "model": "moreofeverything:block/exposed_copper_chain",
+      "x": 90
+    }
+  }
+}

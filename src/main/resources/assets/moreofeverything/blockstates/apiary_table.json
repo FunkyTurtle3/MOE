@@ -1,0 +1,19 @@
+{
+	"variants": {
+		"facing=north": {
+			"model": "moreofeverything:block/apiary_table"
+		},
+		"facing=east": {
+			"model": "moreofeverything:block/apiary_table",
+			"y": 90
+		},
+		"facing=south": {
+			"model": "moreofeverything:block/apiary_table",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "moreofeverything:block/apiary_table",
+			"y": 270
+		}
+	}
+}

@@ -1,0 +1,10 @@
+{
+  "type": "moreofeverything:wood_saw_recipe",
+  "ingredient": {
+    "item": "minecraft:warped_hyphae"
+  },
+  "result": {
+    "id": "minecraft:warped_fence_gate",
+    "count": 4
+  }
+}

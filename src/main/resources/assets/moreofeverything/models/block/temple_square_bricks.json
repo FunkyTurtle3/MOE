@@ -1,0 +1,12 @@
+{
+	"parent": "minecraft:block/cube_all",
+	"textures": {
+		"up": "moreofeverything:block/temple_square_bricks",
+		"down": "moreofeverything:block/temple_square_bricks",
+		"east": "moreofeverything:block/temple_square_bricks",
+		"west": "moreofeverything:block/temple_square_bricks",
+		"north": "moreofeverything:block/temple_square_bricks_n_s",
+		"south": "moreofeverything:block/temple_square_bricks_n_s",
+		"particle": "moreofeverything:block/temple_square_bricks"
+	}
+}

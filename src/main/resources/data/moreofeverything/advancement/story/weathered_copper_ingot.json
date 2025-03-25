@@ -1,0 +1,33 @@
+{
+  "parent": "moreofeverything:story/exposed_copper_ingot",
+  "criteria": {
+    "ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moreofeverything:weathered_copper_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moreofeverything.weathered_copper_ingot.des"
+    },
+    "icon": {
+      "count": 1,
+      "id": "moreofeverything:weathered_copper_ingot"
+    },
+    "title": {
+      "translate": "advancements.moreofeverything.weathered_copper_ingot"
+    }
+  },
+  "requirements": [
+    [
+      "ingot"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

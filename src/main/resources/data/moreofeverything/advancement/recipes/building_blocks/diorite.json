@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_diorite": {
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:diorite"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_diorite"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "moreofeverything:stone_variants/crafting/diorite/diorite_shingles",
+      "moreofeverything:stone_variants/crafting/diorite/diorite_square_bricks",
+      "moreofeverything:stone_variants/crafting/diorite/diorite_triangle_bricks",
+      "moreofeverything:stone_variants/crafting/diorite/diorite_compressed_bricks"
+    ]
+  }
+}

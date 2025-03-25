@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "moreofeverything:amethyst_square_bricks"
+    }
+  },
+  "result": {
+    "id": "moreofeverything:amethyst_compressed_bricks",
+    "count": 4
+  }
+}

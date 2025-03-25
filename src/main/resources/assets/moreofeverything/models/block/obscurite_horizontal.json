@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "moreofeverything:block/obscurite_top",
+    "side": "moreofeverything:block/obscurite_side"
+  }
+}

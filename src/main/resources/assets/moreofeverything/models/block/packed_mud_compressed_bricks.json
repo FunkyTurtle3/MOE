@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:block/cube_all",
+	"textures": {
+		"all": "moreofeverything:block/compressed_bricks/packed_mud_compressed_bricks"
+	}
+}

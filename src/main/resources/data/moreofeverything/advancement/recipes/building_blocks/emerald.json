@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_emerald": {
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:emerald_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_emerald"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "moreofeverything:stone_variants/crafting/emerald/emerald_shingles",
+      "moreofeverything:stone_variants/crafting/emerald/emerald_square_bricks",
+      "moreofeverything:stone_variants/crafting/emerald/emerald_triangle_bricks",
+      "moreofeverything:stone_variants/crafting/emerald/emerald_compressed_bricks",
+      "moreofeverything:emerald_pillar"
+    ]
+  }
+}

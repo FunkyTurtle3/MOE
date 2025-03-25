@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_basalt": {
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:basalt"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_basalt"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "moreofeverything:stone_variants/crafting/basalt/basalt_shingles",
+      "moreofeverything:stone_variants/crafting/basalt/basalt_square_bricks",
+      "moreofeverything:stone_variants/crafting/basalt/basalt_triangle_bricks",
+      "moreofeverything:stone_variants/crafting/basalt/basalt_compressed_bricks"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "minecraft:beetroot"
+  },
+  "result": {
+    "id": "moreofeverything:baked_beetroot"
+  },
+  "experience": 3,
+  "cookingtime": 200
+}

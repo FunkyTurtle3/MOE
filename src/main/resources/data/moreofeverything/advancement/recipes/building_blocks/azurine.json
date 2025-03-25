@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_azurine": {
+      "conditions": {
+        "items": [
+          {
+            "item": "moreofeverything:azurine_blocks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_azurine"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "moreofeverything:stone_variants/crafting/azurine/azurine_shingles",
+      "moreofeverything:stone_variants/crafting/azurine/azurine_square_bricks",
+      "moreofeverything:stone_variants/crafting/azurine/azurine_triangle_bricks",
+      "moreofeverything:stone_variants/crafting/azurine/azurine_compressed_bricks",
+      "moreofeverything:azurine_pillar"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "parent": "moreofeverything:story/moe_root",
+  "criteria": {
+    "ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moreofeverything:exposed_copper_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.moreofeverything.exposed_copper_ingot.des"
+    },
+    "icon": {
+      "count": 1,
+      "id": "moreofeverything:exposed_copper_ingot"
+    },
+    "title": {
+      "translate": "advancements.moreofeverything.exposed_copper_ingot"
+    }
+  },
+  "requirements": [
+    [
+      "ingot"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

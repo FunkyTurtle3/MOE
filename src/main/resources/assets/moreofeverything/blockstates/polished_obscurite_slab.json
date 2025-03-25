@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "moreofeverything:block/polished_obscurite_slab"
+    },
+    "type=double": {
+      "model": "moreofeverything:block/polished_obscurite"
+    },
+    "type=top": {
+      "model": "moreofeverything:block/polished_obscurite_slab_top"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_netherrack": {
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:netherrack"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_netherrack"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "moreofeverything:stone_variants/crafting/netherrack/netherrack_shingles",
+      "moreofeverything:stone_variants/crafting/netherrack/netherrack_square_bricks",
+      "moreofeverything:stone_variants/crafting/netherrack/netherrack_triangle_bricks",
+      "moreofeverything:stone_variants/crafting/netherrack/netherrack_compressed_bricks"
+    ]
+  }
+}

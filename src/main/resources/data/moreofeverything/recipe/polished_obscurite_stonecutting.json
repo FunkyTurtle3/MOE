@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": [
+    {
+      "item": "moreofeverything:obscurite"
+    },
+    {
+      "item": "moreofeverything:chiseled_obscurite"
+    },
+    {
+      "item": "moreofeverything:obscurite_bricks"
+    },
+    {
+      "item": "moreofeverything:obscurite_shingles"
+    }
+  ],
+  "result": {
+    "id": "moreofeverything:polished_obscurite",
+    "count": 1
+  }
+}

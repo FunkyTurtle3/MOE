@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "moreofeverything:block/fir_ladder",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "moreofeverything:block/fir_ladder"
+    },
+    "facing=south": {
+      "model": "moreofeverything:block/fir_ladder",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "moreofeverything:block/fir_ladder",
+      "y": 270
+    }
+  }
+}

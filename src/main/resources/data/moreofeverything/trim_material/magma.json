@@ -1,0 +1,10 @@
+{
+  "asset_name": "magma",
+  "decal": false,
+  "description": {
+    "color": "#c55d18",
+    "translate": "trim.materials.moreofeverything.magma"
+  },
+  "ingredient": "minecraft:magma_cream",
+  "item_model_index": 0.196970
+}
