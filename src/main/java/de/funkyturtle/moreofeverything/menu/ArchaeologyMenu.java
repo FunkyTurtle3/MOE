@@ -42,7 +42,7 @@ public class ArchaeologyMenu extends AbstractContainerMenu {
         this.data = data;
 
         for (int i1 = 0; i1 < 9; i1++) {
-            this.addSlot(new Slot(inventory, i1, 8 + i1 * 18, 156 + 2 * 18));
+            this.addSlot(new Slot(inventory, i1, 8 + i1 * 18, 162 + 2 * 18));
         }
         for (int l = 0; l < 3; l++) {
             for (int j1 = 0; j1 < 9; j1++) {
@@ -128,7 +128,17 @@ public class ArchaeologyMenu extends AbstractContainerMenu {
         this.addSlot(new SlotItemHandler(this.container.itemHandler, 59, 35 + 18 * 5, 105 ) {
             @Override
             public boolean mayPlace(@NotNull ItemStack stack) {
-                return stack.is(Items.ARMS_UP_POTTERY_SHERD);
+                return stack.is(Items.NETHERITE_INGOT);
+            }
+
+            @Override
+            public int getMaxStackSize() {
+                return 1;
+            }
+
+            @Override
+            public int getMaxStackSize(@NotNull ItemStack stack) {
+                return 1;
             }
         });
         addDataSlots(data);

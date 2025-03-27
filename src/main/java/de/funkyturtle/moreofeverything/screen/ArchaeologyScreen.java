@@ -50,7 +50,7 @@ public class ArchaeologyScreen extends AbstractContainerScreen<ArchaeologyMenu> 
                 } else {
                     resourceLocation = ResourceLocation.withDefaultNamespace("textures/block/suspicious_sand_0.png");
                 }
-                p_283065_.blit(resourceLocation, this.leftPos + 62 + 18 * t, this.topPos + 36 + 18 * z,0,0, 16, 16, 16,16);
+                p_283065_.blit(resourceLocation, this.leftPos + 71 + t * 18, this.topPos + 24 + z * 18,0,0, 16, 16, 16,16);
             }
         }
     }
