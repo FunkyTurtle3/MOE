@@ -76,6 +76,7 @@ public class MOECreativeTab {
                 output.accept(MOEItem.ELDRITCH_CAUTIOUSTAL.get());
                 output.accept(MOEItem.ORB_OF_LUCK.get());
                 output.accept(MOEItem.ORB_OF_COMPLETION.get());
+                output.accept(MOEItem.STRANGE_MATTER.get());
 
 
                 output.accept(MOEItem.GOLD_BRUSH.get());

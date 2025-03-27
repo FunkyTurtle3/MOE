@@ -4,6 +4,7 @@ import com.google.common.collect.Lists;
 import de.funkyturtle.moreofeverything.block.blockentity.custom.ArchaeologyTableBlockEntity;
 import de.funkyturtle.moreofeverything.component.MOEDataComponentTypes;
 import de.funkyturtle.moreofeverything.item.MOEItem;
+import de.funkyturtle.moreofeverything.item.custom.MysteriousMaterial;
 import de.funkyturtle.moreofeverything.util.MOEMath;
 import de.funkyturtle.moreofeverything.block.MOEBlock;
 import de.funkyturtle.moreofeverything.recipe.ArchaeologyRecipe;
@@ -128,7 +129,7 @@ public class ArchaeologyMenu extends AbstractContainerMenu {
         this.addSlot(new SlotItemHandler(this.container.itemHandler, 59, 35 + 18 * 5, 105 ) {
             @Override
             public boolean mayPlace(@NotNull ItemStack stack) {
-                return stack.is(Items.NETHERITE_INGOT);
+                return stack.is(MOEItem.STRANGE_MATTER.get());
             }
 
             @Override
@@ -202,7 +203,9 @@ public class ArchaeologyMenu extends AbstractContainerMenu {
         return !inputSlot.hasItem() || this.container.data.get(a) == 1;
     }
     public void select(int a) {
-        if(container.itemHandler.getStackInSlot(57).isEmpty() && 0.2 > Math.random()) {
+        if (!container.itemHandler.getStackInSlot(59).isEmpty() && 0.08 > Math.random()) {
+            container.itemHandler.setStackInSlot(59, ((MysteriousMaterial) inputSlot.getItem().getItem()).getInsaneItem().copy());
+        } else if(container.itemHandler.getStackInSlot(57).isEmpty() && 0.2 > Math.random()) {
             container.itemHandler.setStackInSlot(a, ItemStack.EMPTY);
             if (!container.itemHandler.getStackInSlot(58).isEmpty()) {
                 container.itemHandler.setStackInSlot(58, new ItemStack(Items.EXPERIENCE_BOTTLE));
@@ -283,6 +286,7 @@ public class ArchaeologyMenu extends AbstractContainerMenu {
         super.clicked(pSlotId, pButton, pClickType, pPlayer);
         if (pSlotId >= 38 && pSlotId < 54 && !isSelected(pSlotId - 38) && inputSlot.hasItem() && brushSlot.hasItem() && brushSlot.getItem().getDamageValue() < brushSlot.getItem().getMaxDamage() - getBrushDamage()) {
             select(pSlotId - 38);
+            System.out.println("clicked");
         }
     }
 }
