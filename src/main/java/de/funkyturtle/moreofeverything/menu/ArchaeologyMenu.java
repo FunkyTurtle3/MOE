@@ -15,6 +15,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.*;
 import net.minecraft.world.item.BrushItem;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.RecipeHolder;
 import net.minecraft.world.item.crafting.SingleRecipeInput;
 import net.minecraft.world.level.Level;
@@ -41,7 +42,7 @@ public class ArchaeologyMenu extends AbstractContainerMenu {
         this.data = data;
 
         for (int i1 = 0; i1 < 9; i1++) {
-            this.addSlot(new Slot(inventory, i1, 8 + i1 * 18, 162 + 2*18));
+            this.addSlot(new Slot(inventory, i1, 8 + i1 * 18, 156 + 2 * 18));
         }
         for (int l = 0; l < 3; l++) {
             for (int j1 = 0; j1 < 9; j1++) {
@@ -49,7 +50,7 @@ public class ArchaeologyMenu extends AbstractContainerMenu {
                 System.out.println(j1 + l * 9 + 9);
             }
         }
-        this.inputSlot = addSlot(new SlotItemHandler(this.container.itemHandler, 36, 26, 45)
+        this.inputSlot = addSlot(new SlotItemHandler(this.container.itemHandler, 36, 35, 33)
         {
             @Override
             public boolean mayPickup(Player playerIn) {
@@ -66,7 +67,7 @@ public class ArchaeologyMenu extends AbstractContainerMenu {
                 return pStack.is(MOETag.Items.MYSTERIOUS_MATERIAL);
             }
         });
-        this.brushSlot = addSlot(new SlotItemHandler(this.container.itemHandler, 37, 26, 81)
+        this.brushSlot = addSlot(new SlotItemHandler(this.container.itemHandler, 37, 35, 69)
         {
             @Override
             public boolean mayPlace(@NotNull ItemStack pStack) {
@@ -76,7 +77,7 @@ public class ArchaeologyMenu extends AbstractContainerMenu {
 
         for (int t = 0; t < 4; t++) {
             for (int z = 0; z < 4; z++) {
-                this.addSlot(new SlotItemHandler(this.container.itemHandler,38 + 4 * t + z, 62 + t * 18, 36 + z * 18){
+                this.addSlot(new SlotItemHandler(this.container.itemHandler,38 + 4 * t + z, 71 + t * 18, 24 + z * 18){
                     @Override
                     public boolean mayPlace(@NotNull ItemStack pStack) {
                         return false;
@@ -84,33 +85,52 @@ public class ArchaeologyMenu extends AbstractContainerMenu {
                 });
             }
         }
-        this.addSlot(new SlotItemHandler(this.container.itemHandler, 54, 152, 18 ) {
+        this.addSlot(new SlotItemHandler(this.container.itemHandler, 54, 35, 105 ) {
             @Override
             public boolean mayPlace(@NotNull ItemStack stack) {
                 return stack.get(MOEDataComponentTypes.MATERIAL_DAMAGE.get()) != null;
             }
         });
-        this.addSlot(new SlotItemHandler(this.container.itemHandler, 55, 152, 36 ) {
+        this.addSlot(new SlotItemHandler(this.container.itemHandler, 55, 35 + 18 * 1, 105 ) {
             @Override
             public boolean mayPlace(@NotNull ItemStack stack) {
                 return stack.get(MOEDataComponentTypes.BRUSH_DAMAGE.get()) != null;
             }
         });
-        this.addSlot(new SlotItemHandler(this.container.itemHandler, 56, 152, 54 ) {
+        this.addSlot(new SlotItemHandler(this.container.itemHandler, 56, 35 + 18 * 2, 105 ) {
             @Override
             public boolean mayPlace(@NotNull ItemStack stack) {
                 return stack.is(MOEItem.ORB_OF_LUCK.get());
             }
         });
-        this.addSlot(new SlotItemHandler(this.container.itemHandler, 57, 152, 72 ) {
+        this.addSlot(new SlotItemHandler(this.container.itemHandler, 57, 35 + 18 * 3, 105 ) {
             @Override
             public boolean mayPlace(@NotNull ItemStack stack) {
                 return stack.is(MOEItem.ORB_OF_COMPLETION.get());
             }
         });
-        for (int i = 0; i < 2; i++) {
-            this.addSlot(new SlotItemHandler(this.container.itemHandler, 58 + i, 152, 90 + i * 18));
-        }
+        this.addSlot(new SlotItemHandler(this.container.itemHandler, 58, 35 + 18 * 4, 105 ) {
+            @Override
+            public boolean mayPlace(@NotNull ItemStack stack) {
+                return stack.is(Items.GLASS_BOTTLE);
+            }
+
+            @Override
+            public int getMaxStackSize() {
+                return 1;
+            }
+
+            @Override
+            public int getMaxStackSize(@NotNull ItemStack stack) {
+                return 1;
+            }
+        });
+        this.addSlot(new SlotItemHandler(this.container.itemHandler, 59, 35 + 18 * 5, 105 ) {
+            @Override
+            public boolean mayPlace(@NotNull ItemStack stack) {
+                return stack.is(Items.ARMS_UP_POTTERY_SHERD);
+            }
+        });
         addDataSlots(data);
     }
 
@@ -174,6 +194,9 @@ public class ArchaeologyMenu extends AbstractContainerMenu {
     public void select(int a) {
         if(container.itemHandler.getStackInSlot(57).isEmpty() && 0.2 > Math.random()) {
             container.itemHandler.setStackInSlot(a, ItemStack.EMPTY);
+            if (!container.itemHandler.getStackInSlot(58).isEmpty()) {
+                container.itemHandler.setStackInSlot(58, new ItemStack(Items.EXPERIENCE_BOTTLE));
+            }
         } else {
             setupResultSlot(a);
         }
