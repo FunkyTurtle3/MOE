@@ -1,0 +1,13 @@
+{
+  "type": "moreofeverything:archaeology_recipe",
+  "ingredient": {
+    "item": "moreofeverything:mysterious_material_6"
+  },
+  "result": {
+    "id": "moreofeverything:red_sand",
+    "count": 1
+  },
+  "chance": 1.5,
+  "minimum": 1,
+  "maximum": 3
+}

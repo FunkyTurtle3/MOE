@@ -204,7 +204,8 @@ public class ArchaeologyMenu extends AbstractContainerMenu {
     }
     public void select(int a) {
         if (!container.itemHandler.getStackInSlot(59).isEmpty() && 0.08 > Math.random()) {
-            container.itemHandler.setStackInSlot(59, ((MysteriousMaterial) inputSlot.getItem().getItem()).getInsaneItem().copy());
+            container.itemHandler.setStackInSlot(a + 38, ((MysteriousMaterial) inputSlot.getItem().getItem()).getInsaneItem().copy());
+            container.itemHandler.setStackInSlot(59, ItemStack.EMPTY);
         } else if(container.itemHandler.getStackInSlot(57).isEmpty() && 0.2 > Math.random()) {
             container.itemHandler.setStackInSlot(a, ItemStack.EMPTY);
             if (!container.itemHandler.getStackInSlot(58).isEmpty()) {
