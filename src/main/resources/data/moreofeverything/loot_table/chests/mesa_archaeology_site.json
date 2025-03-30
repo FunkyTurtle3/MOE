@@ -73,7 +73,18 @@
         {
           "type": "minecraft:item",
           "name": "moreofeverything:gold_brush",
-          "weight": 2
+          "weight": 2,
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.75,
+                "min": 0.25
+              },
+              "function": "minecraft:set_damage"
+            }
+          ]
         }
       ]
     }
