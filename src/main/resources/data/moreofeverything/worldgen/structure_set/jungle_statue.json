@@ -1,0 +1,18 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 1283647309,
+    "frequency_reduction_method": "default",
+    "frequency": 0.7,
+    "spread_type": "linear",
+    "spacing": 12,
+    "separation": 8
+  },
+  "process": "none",
+  "structures": [
+    {
+      "structure": "moreofeverything:jungle_statue",
+      "weight": 1
+    }
+  ]
+}
