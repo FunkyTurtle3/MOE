@@ -1,0 +1,18 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 22936871,
+    "frequency_reduction_method": "default",
+    "frequency": 0.7,
+    "spread_type": "linear",
+    "spacing": 12,
+    "separation": 6
+  },
+  "process": "none",
+  "structures": [
+    {
+      "structure": "moreofeverything:smoke_house",
+      "weight": 1
+    }
+  ]
+}

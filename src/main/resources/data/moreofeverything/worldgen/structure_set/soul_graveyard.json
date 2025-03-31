@@ -1,0 +1,17 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 172638493,
+    "frequency_reduction_method": "default",
+    "frequency": 0.7,
+    "spread_type": "linear",
+    "spacing": 8,
+    "separation": 3
+  },
+  "structures": [
+    {
+      "structure": "moreofeverything:soul_graveyard",
+      "weight": 1
+    }
+  ]
+}

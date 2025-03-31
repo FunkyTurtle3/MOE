@@ -12,6 +12,11 @@
         },
         {
           "type": "minecraft:item",
+          "name": "moreofeverything:mysterious_material_10",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:sand",
           "weight": 14
         },
