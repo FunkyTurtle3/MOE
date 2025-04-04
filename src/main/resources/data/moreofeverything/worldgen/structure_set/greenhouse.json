@@ -1,0 +1,18 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 483267109,
+    "frequency_reduction_method": "default",
+    "frequency": 0.7,
+    "spread_type": "linear",
+    "spacing": 10,
+    "separation": 6
+  },
+  "process": "none",
+  "structures": [
+    {
+      "structure": "moreofeverything:greenhouse",
+      "weight": 1
+    }
+  ]
+}

@@ -221,7 +221,7 @@
   "tooltip.moreofeverything.ancient_shovel.description": "§eWhen mining a suspicious block it will drop it's content",
   "tooltip.moreofeverything.ancient_hoe.description": "§eMined Crop Blocks automatically turn into their baked form",
   "tooltip.moreofeverything.mysterious_material": "§bCan be found in ...",
-  "tooltip.moreofeverything.aqua_shift_text": "§bHold §9SHIFT §bfor more Information",
+  "tooltip.moreofeverything.aqua_shift_text": "§bHold §3SHIFT §bfor more Information",
 
   "trim_pattern.moreofeverything.ancient": "Ancient Trim",
 

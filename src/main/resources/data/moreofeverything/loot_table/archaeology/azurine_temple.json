@@ -1,0 +1,62 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 12,
+      "bonus_rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:kelp",
+          "weight": 12
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moreofeverything:mysterious_material_10",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sand",
+          "weight": 14
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moreofeverything:golden_kelp",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moreofeverything:azurine_dust",
+          "weight": 35
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:trident",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:limit_count",
+              "limit": 1
+            },
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.5,
+                "min": 0.35
+              },
+              "function": "minecraft:set_damage"
+            }
+          ],
+          "conditions": []
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nautilus_shell",
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}
