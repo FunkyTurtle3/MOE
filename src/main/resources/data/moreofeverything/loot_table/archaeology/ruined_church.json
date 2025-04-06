@@ -26,39 +26,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:enchanted_book",
-          "quality": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_enchantments",
-              "enchantments": {
-                "moreofeverything:auto_smelt": 0
-              },
-              "add": true,
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.3
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:flame": 0
-              },
-              "add": false,
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.5
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:blue_stained_glass",
           "quality": 2
         },
