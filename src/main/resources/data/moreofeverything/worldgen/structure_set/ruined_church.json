@@ -1,0 +1,18 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 12837465,
+    "frequency_reduction_method": "default",
+    "frequency": 0.7,
+    "spread_type": "linear",
+    "spacing": 14,
+    "separation": 10
+  },
+  "process": "none",
+  "structures": [
+    {
+      "structure": "moreofeverything:ruined_church",
+      "weight": 1
+    }
+  ]
+}

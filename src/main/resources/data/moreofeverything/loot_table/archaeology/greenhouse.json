@@ -37,8 +37,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:tadpole_bucket",
-          "weight": 1,
-          "functions": []
+          "weight": 1
         },
         {
           "type": "minecraft:item",
