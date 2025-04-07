@@ -6,6 +6,7 @@ import de.funkyturtle.moreofeverything.block.blockentity.MOEBlockEntities;
 import de.funkyturtle.moreofeverything.component.MOEDataComponentTypes;
 import de.funkyturtle.moreofeverything.creativetab.MOECreativeTab;
 import de.funkyturtle.moreofeverything.entity.MOEEntity;
+import de.funkyturtle.moreofeverything.entity.render.DustArrowRenderer;
 import de.funkyturtle.moreofeverything.entity.render.KiwiRenderer;
 import de.funkyturtle.moreofeverything.item.MOEItem;
 import de.funkyturtle.moreofeverything.menu.MOEMenu;
@@ -70,6 +71,7 @@ public class MoreOfEverything
         public static void onClientSetup(FMLClientSetupEvent event) {
 
             EntityRenderers.register(MOEEntity.KIWI.get(), KiwiRenderer::new);
+            EntityRenderers.register(MOEEntity.DUST_ARROW.get(), DustArrowRenderer::new);
         }
     }
 }

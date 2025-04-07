@@ -199,6 +199,7 @@
   "item.moreofeverything.orb_of_completion": "Orb of Completion",
   "item.moreofeverything.kiwi_spawn_egg": "Kiwi Spawn Egg",
   "item.moreofeverything.strange_matter": "§6Strange Matter",
+  "item.moreofeverything.dust_arrow": "Dust Arrow",
 
 
   "entity.minecraft.villager.moreofeverything.apiarist": "Apiarist",
@@ -224,7 +225,7 @@
 
   "tooltip.moreofeverything.mysterious_material_1": "§bCan be found in ...",
   "tooltip.moreofeverything.mysterious_material_2": "§bCan be found near Jungle Statues",
-  "tooltip.moreofeverything.mysterious_material_3": "§bCan be found in ...",
+  "tooltip.moreofeverything.mysterious_material_3": "§bCan be found in ruined churches",
   "tooltip.moreofeverything.mysterious_material_4": "§bCan be found at Smokehouses",
   "tooltip.moreofeverything.mysterious_material_5": "§bCan be found in Observatories",
   "tooltip.moreofeverything.mysterious_material_6": "§bCan be found at Archaeology Sites in hot biomes",
@@ -279,5 +280,6 @@
   "advancements.moreofeverything.golden_kelp.des": "Collect Golden Kelp",
 
 
-  "entity.moreofeverything.kiwi": "Kiwi"
+  "entity.moreofeverything.kiwi": "Kiwi",
+  "entity.moreofeverything.dust_arrow": "Dust Arrow"
 }

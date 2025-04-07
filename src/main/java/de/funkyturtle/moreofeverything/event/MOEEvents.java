@@ -4,12 +4,18 @@ import de.funkyturtle.moreofeverything.block.MOEBlock;
 import de.funkyturtle.moreofeverything.item.MOEItem;
 import de.funkyturtle.moreofeverything.villager.MOEVillager;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.trading.ItemCost;
 import net.minecraft.world.item.trading.MerchantOffer;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.BrushableBlock;
+import net.minecraft.world.level.block.entity.BrushableBlockEntity;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
+import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.event.village.VillagerTradesEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -21,6 +27,18 @@ import java.util.Optional;
 public class MOEEvents {
     @Mod.EventBusSubscriber(modid = MoreOfEverything.MOD_ID)
     public static class ForgeEvents {
+        @SubscribeEvent
+        public static void blockBreakingEvent(BlockEvent.BreakEvent event) {
+            if(Math.random() < 0.0006666666666) {
+                event.getLevel().addFreshEntity(new ItemEntity((Level) event.getLevel(), event.getPos().getX() + 0.5, event.getPos().getY() + 0.5, event.getPos().getZ() + 0.5, new ItemStack(MOEItem.STRANGE_MATTER.get())));
+            }
+
+            if (event.getPlayer().getItemInHand(InteractionHand.MAIN_HAND).is(MOEItem.ANCIENT_SHOVEL.get()) && event.getLevel().getBlockState(event.getPos()).getBlock() instanceof BrushableBlock) {
+                ((BrushableBlockEntity) event.getLevel().getBlockEntity(event.getPos())).unpackLootTable(event.getPlayer());
+                event.getLevel().addFreshEntity(new ItemEntity((Level) event.getLevel(), event.getPos().getX() + 0.5, event.getPos().getY() + 0.5, event.getPos().getZ() + 0.5, ((BrushableBlockEntity) event.getLevel().getBlockEntity(event.getPos())).getItem()));
+            }
+        }
+
         @SubscribeEvent
         public static void addCustomTrades(VillagerTradesEvent event) {
             if(event.getType() == MOEVillager.APIARIST_VILLAGER.get()) {

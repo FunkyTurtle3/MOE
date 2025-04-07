@@ -2,7 +2,7 @@
 	"ambientocclusion": false,
 	"render_type": "minecraft:cutout",
 	"textures": {
-		"slab": "block/smooth_stone",
+		"slab": "minecraft:block/smooth_stone",
 		"particle": "moreofeverything:block/or_gate_off_inverted",
 		"top": "moreofeverything:block/or_gate_off_inverted",
 		"unlit": "minecraft:block/redstone_torch_off"

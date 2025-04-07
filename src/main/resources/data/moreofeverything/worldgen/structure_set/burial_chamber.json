@@ -1,0 +1,18 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 1392638732,
+    "frequency_reduction_method": "default",
+    "frequency": 0.7,
+    "spread_type": "linear",
+    "spacing": 10,
+    "separation": 8
+  },
+  "process": "none",
+  "structures": [
+    {
+      "structure": "moreofeverything:burial_chamber",
+      "weight": 1
+    }
+  ]
+}

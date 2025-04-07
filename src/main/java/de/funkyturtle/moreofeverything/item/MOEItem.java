@@ -3,6 +3,7 @@ package de.funkyturtle.moreofeverything.item;
 import de.funkyturtle.moreofeverything.MoreOfEverything;
 import de.funkyturtle.moreofeverything.component.MOEDataComponentTypes;
 import de.funkyturtle.moreofeverything.entity.MOEEntity;
+import de.funkyturtle.moreofeverything.item.custom.DustArrowItem;
 import de.funkyturtle.moreofeverything.item.custom.MysteriousMaterial;
 import de.funkyturtle.moreofeverything.item.custom.Sapphire;
 import de.funkyturtle.moreofeverything.item.custom.capturenet.CaptureNet;
@@ -147,7 +148,10 @@ public class MOEItem {
     public static final RegistryObject<Item> ORB_OF_LUCK = ITEMS.register("orb_of_luck", () -> new Item(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC)));
     public static final RegistryObject<Item> ORB_OF_COMPLETION = ITEMS.register("orb_of_completion", () -> new Item(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC)));
     public static final RegistryObject<SpawnEggItem> KIWI_SPAWN_EGG = ITEMS.register("kiwi_spawn_egg", () -> new ForgeSpawnEggItem(MOEEntity.KIWI, 0x50362c, 0xa4774c, new Item.Properties()));
-    public static final RegistryObject<Item> STRANGE_MATTER = ITEMS.register("strange_matter", () -> new Item(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC)));
+    public static final RegistryObject<Item> STRANGE_MATTER = ITEMS.register("strange_matter", () -> new Item(new Item.Properties().stacksTo(16).rarity(Rarity.EPIC)));
+
+    public static final RegistryObject<DustArrowItem> DUST_ARROW = ITEMS.register("dust_arrow", () -> new DustArrowItem(new Item.Properties().stacksTo(16)));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
