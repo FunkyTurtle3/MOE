@@ -223,17 +223,16 @@
   "tooltip.moreofeverything.ancient_hoe.description": "§eMined Crop Blocks automatically turn into their baked form",
   "tooltip.moreofeverything.aqua_shift_text": "§bHold §3SHIFT §bfor more Information",
 
-  "tooltip.moreofeverything.mysterious_material_1": "§bCan be found in ...",
+  "tooltip.moreofeverything.mysterious_material_1": "§bCan be found in Burial Chambers",
   "tooltip.moreofeverything.mysterious_material_2": "§bCan be found near Jungle Statues",
-  "tooltip.moreofeverything.mysterious_material_3": "§bCan be found in ruined churches",
+  "tooltip.moreofeverything.mysterious_material_3": "§bCan be found in Ruined Churches",
   "tooltip.moreofeverything.mysterious_material_4": "§bCan be found at Smokehouses",
   "tooltip.moreofeverything.mysterious_material_5": "§bCan be found in Observatories",
   "tooltip.moreofeverything.mysterious_material_6": "§bCan be found at Archaeology Sites in hot biomes",
-  "tooltip.moreofeverything.mysterious_material_7": "§bCan be found in ...",
+  "tooltip.moreofeverything.mysterious_material_7": "§bCan be found in Wizard Towers",
   "tooltip.moreofeverything.mysterious_material_8": "§bCan be found in Greenhouses",
-  "tooltip.moreofeverything.mysterious_material_9": "§bCan be found in ...",
+  "tooltip.moreofeverything.mysterious_material_9": "§bCan be found in cold Ocean Ruins",
   "tooltip.moreofeverything.mysterious_material_10": "§bCan be found at Azurine Temples",
-
 
 
   "trim_pattern.moreofeverything.ancient": "Ancient Trim",
