@@ -23,7 +23,7 @@ import java.util.List;
 
 public class MOEItem {
 
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create( ForgeRegistries.ITEMS, MoreOfEverything.MOD_ID);
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MoreOfEverything.MOD_ID);
 
     public static final RegistryObject<Item> CAPTURE_NET = ITEMS.register("capture_net", () -> new CaptureNet(new Item.Properties()
             .stacksTo(1)
@@ -139,7 +139,6 @@ public class MOEItem {
     public static final RegistryObject<Item> STRANGE_MATTER = ITEMS.register("strange_matter", () -> new Item(new Item.Properties().stacksTo(16).rarity(Rarity.EPIC)));
 
     public static final RegistryObject<DustArrowItem> DUST_ARROW = ITEMS.register("dust_arrow", () -> new DustArrowItem(new Item.Properties().stacksTo(16)));
-
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

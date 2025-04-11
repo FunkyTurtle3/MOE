@@ -39,6 +39,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Supplier;
 
@@ -151,7 +152,7 @@ public class MOEBlock {
     public static final RegistryObject<Block> AGED_SAND_BRICK_STAIRS = registerBlock("aged_sand_brick_stairs", () -> new StairBlock(MOEBlock.AGED_SAND_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.BRICK_STAIRS).mapColor(MapColor.SAND)));
     public static final RegistryObject<Block> SMALL_FIRE_BASKET = registerBlock("small_fire_basket", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.PLAYER_HEAD).mapColor(MapColor.DEEPSLATE).lightLevel(state -> 9).noOcclusion()) {
         @Override
-        public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
+        public @NotNull VoxelShape getShape(@NotNull BlockState pState, @NotNull BlockGetter pLevel, @NotNull BlockPos pPos, @NotNull CollisionContext pContext) {
             return Block.box(4.0, 0.0, 4.0, 12.0,8.0,12.0);
         }
     });
