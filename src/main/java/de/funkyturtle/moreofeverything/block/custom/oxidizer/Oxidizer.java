@@ -105,10 +105,6 @@ public class Oxidizer extends Block {
                     player.setItemInHand(hand, getStackForStack(stack));
                     level.playSound(null, pos, SoundEvents.COPPER_HIT, SoundSource.BLOCKS, 1.0F, 1.0F);
                 }
-                player.giveExperiencePoints(10);
-                System.out.println(player.experienceLevel);
-                System.out.println(player.experienceProgress);
-                System.out.println(player.totalExperience);
             }
         return ItemInteractionResult.SUCCESS;
     }
