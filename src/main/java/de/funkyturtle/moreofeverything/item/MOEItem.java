@@ -140,6 +140,8 @@ public class MOEItem {
 
     public static final RegistryObject<DustArrowItem> DUST_ARROW = ITEMS.register("dust_arrow", () -> new DustArrowItem(new Item.Properties().stacksTo(16)));
 
+    public static final RegistryObject<Item> UNOBTANIUM_INGOT = ITEMS.register("unobtainium_ingot", () -> new Item(new Item.Properties().stacksTO(128).rarity(Rarity.EPIC)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
