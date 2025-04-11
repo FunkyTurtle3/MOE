@@ -8,7 +8,6 @@ import de.funkyturtle.moreofeverything.item.custom.MysteriousMaterial;
 import de.funkyturtle.moreofeverything.item.custom.Sapphire;
 import de.funkyturtle.moreofeverything.item.custom.capturenet.CaptureNet;
 import de.funkyturtle.moreofeverything.sounds.MOESound;
-import de.funkyturtle.moreofeverything.util.MOEMath;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -31,17 +30,6 @@ public class MOEItem {
             .rarity(Rarity.UNCOMMON)
             .durability(8)
     ));
-
-    //public static final RegistryObject<Item> MYSTICAL_SOUP_RECIPE = ITEMS.register("mystical_soup_recipe", () -> new SoupRecipeItem(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON), 0));
-    //public static final RegistryObject<Item> ENIGMATIC_SOUP_RECIPE = ITEMS.register("enigmatic_soup_recipe", () -> new SoupRecipeItem(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON), 1));
-    //public static final RegistryObject<Item> ILLUSIVE_SOUP_RECIPE = ITEMS.register("illusive_soup_recipe", () -> new SoupRecipeItem(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON), 2));
-    //public static final RegistryObject<Item> BEWITCHING_SOUP_RECIPE = ITEMS.register("bewitching_soup_recipe", () -> new SoupRecipeItem(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON), 3));
-    //public static final RegistryObject<Item> SPELLBINDIG_SOUP_RECIPE = ITEMS.register("spellbinding_soup_recipe", () -> new SoupRecipeItem(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON), 4));
-    //public static final RegistryObject<Item> ARCANE_SOUP_RECIPE = ITEMS.register("arcane_soup_recipe", () -> new SoupRecipeItem(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON), 5));
-    //public static final RegistryObject<Item> SORCEROUS_SOUP_RECIPE = ITEMS.register("sorcerous_soup_recipe", () -> new SoupRecipeItem(new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 6));
-    //public static final RegistryObject<Item> ELDRITCH_SOUP_RECIPE = ITEMS.register("eldritch_soup_recipe", () -> new SoupRecipeItem(new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 7));
-    //public static final RegistryObject<Item> HAUNTING_SOUP_RECIPE = ITEMS.register("haunting_soup_recipe", () -> new SoupRecipeItem(new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 8));
-    //public static final RegistryObject<Item> INEFFABLE_SOUP_RECIPE = ITEMS.register("ineffable_soup_recipe", () -> new SoupRecipeItem(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC), 9));
 
     public static final RegistryObject<Item> COPPER_NUGGET = ITEMS.register("copper_nugget", () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)));
     public static final RegistryObject<Item> WEATHERED_COPPER_NUGGET = ITEMS.register("weathered_copper_nugget", () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)));

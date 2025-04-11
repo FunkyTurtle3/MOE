@@ -3,6 +3,8 @@ package de.funkyturtle.moreofeverything;
 import com.mojang.logging.LogUtils;
 import de.funkyturtle.moreofeverything.block.MOEBlock;
 import de.funkyturtle.moreofeverything.block.blockentity.MOEBlockEntities;
+import de.funkyturtle.moreofeverything.block.blockentity.custom.MOEBrushableBlockEntity;
+import de.funkyturtle.moreofeverything.block.blockentity.render.MOEBrushableBlockRenderer;
 import de.funkyturtle.moreofeverything.component.MOEDataComponentTypes;
 import de.funkyturtle.moreofeverything.creativetab.MOECreativeTab;
 import de.funkyturtle.moreofeverything.entity.MOEEntity;
@@ -16,10 +18,13 @@ import de.funkyturtle.moreofeverything.screen.ArchaeologyScreen;
 import de.funkyturtle.moreofeverything.sounds.MOESound;
 import de.funkyturtle.moreofeverything.villager.MOEVillager;
 import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.armortrim.TrimMaterials;
+import net.minecraft.world.level.block.entity.BrushableBlockEntity;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -61,8 +66,8 @@ public class MoreOfEverything
             .add(Registries.TRIM_MATERIAL, TrimMaterials::bootstrap);
 
     private void commonSetup(final FMLCommonSetupEvent event)
-    {LOGGER.info("HELLO FROM COMMON SETUP");
-
+    {
+        LOGGER.info("HELLO FROM COMMON SETUP");
     }
 
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -72,6 +77,7 @@ public class MoreOfEverything
 
             EntityRenderers.register(MOEEntity.KIWI.get(), KiwiRenderer::new);
             EntityRenderers.register(MOEEntity.DUST_ARROW.get(), DustArrowRenderer::new);
+            BlockEntityRenderers.register(MOEBlockEntities.MOE_BRUSHABLE_BLOCK_ENTITY.get(), MOEBrushableBlockRenderer::new);
         }
     }
 }

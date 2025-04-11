@@ -5,7 +5,7 @@ import de.funkyturtle.moreofeverything.block.blocktypes.MOEFlammableRotatedPilla
 import de.funkyturtle.moreofeverything.block.blocktypes.MOEHorizontalRotatedBlock;
 import de.funkyturtle.moreofeverything.block.blocktypes.MOEPlankBlock;
 import de.funkyturtle.moreofeverything.block.custom.ArchaeologyTable;
-import de.funkyturtle.moreofeverything.block.custom.SusRedSandBlock;
+import de.funkyturtle.moreofeverything.block.custom.MOEBrushableBlock;
 import de.funkyturtle.moreofeverything.block.custom.diodes.ANDGate;
 import de.funkyturtle.moreofeverything.block.custom.diodes.ORGate;
 import de.funkyturtle.moreofeverything.block.custom.diodes.TDiode;
@@ -34,7 +34,6 @@ import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -271,7 +270,7 @@ public class MOEBlock {
 
     public static final RegistryObject<ORGate> OR_GATE = registerBlock("or_gate", () -> new ORGate(BlockBehaviour.Properties.ofFullCopy(Blocks.REPEATER).noOcclusion()));
 
-    public static final RegistryObject<SusRedSandBlock> SUSPICIOUS_RED_SAND = registerBlock("suspicious_red_sand", () -> new SusRedSandBlock(Blocks.RED_SAND, SoundEvents.BRUSH_SAND , SoundEvents.BRUSH_SAND_COMPLETED, BlockBehaviour.Properties.ofFullCopy(Blocks.SUSPICIOUS_SAND)));
+    public static final RegistryObject<MOEBrushableBlock> SUSPICIOUS_RED_SAND = registerBlock("suspicious_red_sand", () -> new MOEBrushableBlock(Blocks.RED_SAND, SoundEvents.BRUSH_SAND , SoundEvents.BRUSH_SAND_COMPLETED, BlockBehaviour.Properties.ofFullCopy(Blocks.SUSPICIOUS_SAND)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

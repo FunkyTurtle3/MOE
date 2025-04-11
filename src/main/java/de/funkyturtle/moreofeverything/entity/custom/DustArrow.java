@@ -7,6 +7,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.NotNull;
 
@@ -30,16 +31,18 @@ public class DustArrow extends AbstractArrow {
     @Override
     public void tick() {
         super.tick();
-        if (this.level().isClientSide && this.inGround && this.particleDurationInTicks > 0) {
+        if (this.inGround && this.particleDurationInTicks > 0) {
             for (int i = 0; i < 15; i++) {
                 this.level().addParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, this.getX() + MOEMath.getRandomRangedDouble(-2.5, 2.5), this.getY() + MOEMath.getRandomRangedDouble(0, 2.5), this.getZ() + MOEMath.getRandomRangedDouble(-2.5, 2.5), MOEMath.getRandomRangedDouble(-0.02, 0.02), MOEMath.getRandomRangedDouble(0, 0.02), MOEMath.getRandomRangedDouble(-0.02, 0.02));
             }
             particleDurationInTicks--;
+        } else if (this.inGround) {
+            this.remove(RemovalReason.DISCARDED);
         }
     }
 
     @Override
     protected @NotNull ItemStack getDefaultPickupItem() {
-        return ItemStack.EMPTY;
+        return new ItemStack(Items.AIR);
     }
 }

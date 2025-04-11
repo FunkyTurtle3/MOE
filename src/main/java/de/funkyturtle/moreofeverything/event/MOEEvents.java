@@ -1,12 +1,17 @@
 package de.funkyturtle.moreofeverything.event;
 import de.funkyturtle.moreofeverything.MoreOfEverything;
 import de.funkyturtle.moreofeverything.block.MOEBlock;
+import de.funkyturtle.moreofeverything.block.blockentity.custom.MOEBrushableBlockEntity;
 import de.funkyturtle.moreofeverything.item.MOEItem;
 import de.funkyturtle.moreofeverything.villager.MOEVillager;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
+import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.npc.VillagerTrades;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.BrushItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.trading.ItemCost;
@@ -14,7 +19,12 @@ import net.minecraft.world.item.trading.MerchantOffer;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.BrushableBlock;
 import net.minecraft.world.level.block.entity.BrushableBlockEntity;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.HitResult;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
+import net.minecraftforge.event.entity.living.LivingEntityUseItemEvent;
+import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.event.village.VillagerTradesEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -36,6 +46,56 @@ public class MOEEvents {
             if (event.getPlayer().getItemInHand(InteractionHand.MAIN_HAND).is(MOEItem.ANCIENT_SHOVEL.get()) && event.getLevel().getBlockState(event.getPos()).getBlock() instanceof BrushableBlock) {
                 ((BrushableBlockEntity) event.getLevel().getBlockEntity(event.getPos())).unpackLootTable(event.getPlayer());
                 event.getLevel().addFreshEntity(new ItemEntity((Level) event.getLevel(), event.getPos().getX() + 0.5, event.getPos().getY() + 0.5, event.getPos().getZ() + 0.5, ((BrushableBlockEntity) event.getLevel().getBlockEntity(event.getPos())).getItem()));
+            }
+        }
+
+        @SubscribeEvent
+        public static void registerBrush(PlayerInteractEvent.RightClickBlock event) {
+            if (!event.getLevel().isClientSide() && event.getLevel().getBlockEntity(event.getPos()) instanceof MOEBrushableBlockEntity moeBrushableBlockEntity) {
+                boolean flag1 = moeBrushableBlockEntity.brush(event.getLevel().getGameTime(), event.getEntity(),  event.getHitVec().getDirection());
+                if (flag1) {
+                    EquipmentSlot equipmentslot = event.getItemStack().equals(event.getEntity().getItemBySlot(EquipmentSlot.OFFHAND))
+                            ? EquipmentSlot.OFFHAND
+                            : EquipmentSlot.MAINHAND;
+                    event.getItemStack().hurtAndBreak(1, event.getEntity(), equipmentslot);
+                }
+            }
+        }
+
+        @SubscribeEvent
+        public static void onRightClickHold(LivingEntityUseItemEvent.Tick event) {
+            // Prüfen, ob der Spieler das richtige Item benutzt
+            if (event.getEntity() instanceof Player player && event.getItem().getItem() instanceof BrushItem) {
+
+                // Prüfen, ob der Spieler mit dem richtigen Block interagiert
+                HitResult hitResult =  player.pick(5.0D, 0.0F, false);
+                BlockPos pos = new BlockPos(0, 0, 0);
+                if (hitResult.getType() == HitResult.Type.BLOCK) {
+                    BlockHitResult blockHitResult = (BlockHitResult) hitResult;
+                    pos = blockHitResult.getBlockPos(); // BlockPos wird gesetzt
+                } else {
+                    return; // Wenn es kein Block ist, verlässt du die Methode
+                }
+                BlockState blockState = player.level().getBlockState(pos); // z.B. block unter dem Spieler (kannst du ändern)
+
+                // Hier prüfen, ob der Block Brushable ist
+                if (blockState.getBlock() == MOEBlock.SUSPICIOUS_RED_SAND.get()) {
+
+                    // Holen des BlockEntitys an der Position
+                    if (player.level().getBlockEntity(pos) instanceof MOEBrushableBlockEntity moeBrushableBlockEntity) {
+
+                        // Aktionen durchführen, während der Spieler den Rechtsklick gedrückt hält
+                        boolean flag1 = moeBrushableBlockEntity.brush(player.level().getGameTime(), player, event.getEntity().getDirection());
+
+                        if (flag1) {
+                            // Item im Slot beschädigen
+                            EquipmentSlot equipmentSlot = player.getMainHandItem().equals(event.getItem())
+                                    ? EquipmentSlot.MAINHAND
+                                    : EquipmentSlot.OFFHAND;
+                            event.getItem().hurtAndBreak(1, player, equipmentSlot);
+                        }
+                    }
+                }
             }
         }
 

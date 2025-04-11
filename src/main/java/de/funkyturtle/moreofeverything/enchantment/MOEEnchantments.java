@@ -13,7 +13,7 @@ import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.world.item.enchantment.Enchantment;
 
 public class MOEEnchantments {
-    public static final Holder<Enchantment> AUTO_SMELT = (Holder<Enchantment>) ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.fromNamespaceAndPath(MoreOfEverything.MOD_ID, "auto_smelt"));
+    //public static final Holder<Enchantment> AUTO_SMELT = (Holder<Enchantment>) ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.fromNamespaceAndPath(MoreOfEverything.MOD_ID, "auto_smelt"));
 
     /**public static void bootstrap(BootstrapContext<Enchantment> context) {
         var enchantments = context.lookup(Registries.ENCHANTMENT);

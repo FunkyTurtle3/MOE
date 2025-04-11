@@ -2,7 +2,7 @@ package de.funkyturtle.moreofeverything.block.blockentity.render;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
-import de.funkyturtle.moreofeverything.block.blockentity.custom.SusRedSandBE;
+import de.funkyturtle.moreofeverything.block.blockentity.custom.MOEBrushableBlockEntity;
 import net.minecraft.client.renderer.LevelRenderer;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
@@ -17,14 +17,14 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 @OnlyIn(Dist.CLIENT)
-public class SusRedSandBERenderer implements BlockEntityRenderer<SusRedSandBE> {
+public class MOEBrushableBlockRenderer implements BlockEntityRenderer<MOEBrushableBlockEntity> {
     private final ItemRenderer itemRenderer;
 
-    public SusRedSandBERenderer(BlockEntityRendererProvider.Context pContext) {
+    public MOEBrushableBlockRenderer(BlockEntityRendererProvider.Context pContext) {
         this.itemRenderer = pContext.getItemRenderer();
     }
 
-    public void render(SusRedSandBE pBlockEntity, float pPartialTick, PoseStack pPoseStack, MultiBufferSource pBufferSource, int pPackedLight, int pPackedOverlay) {
+    public void render(MOEBrushableBlockEntity pBlockEntity, float pPartialTick, PoseStack pPoseStack, MultiBufferSource pBufferSource, int pPackedLight, int pPackedOverlay) {
         if (pBlockEntity.getLevel() != null) {
             int i = pBlockEntity.getBlockState().getValue(BlockStateProperties.DUSTED);
             if (i > 0) {

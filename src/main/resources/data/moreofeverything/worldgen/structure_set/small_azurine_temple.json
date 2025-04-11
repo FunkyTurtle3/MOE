@@ -5,8 +5,8 @@
     "frequency_reduction_method": "default",
     "frequency": 0.7,
     "spread_type": "linear",
-    "spacing": 8,
-    "separation": 3
+    "spacing": 20,
+    "separation": 8
   },
   "structures": [
     {

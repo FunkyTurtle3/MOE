@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 6,
+      "bonus_rolls": 5,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stripped_oak_log",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:glass_bottle",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:oak_sapling",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:allium",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moreofeverything:mysterious_material_7",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
