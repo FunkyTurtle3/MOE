@@ -118,9 +118,9 @@ public class MOEItem {
     public static final RegistryObject<MysteriousMaterial> MYSTERIOUS_MATERIAL_8 = ITEMS.register("mysterious_material_8", () -> new MysteriousMaterial(new Item.Properties(), new ItemStack(Items.DIAMOND), "tooltip.moreofeverything.mysterious_material_8"));
     public static final RegistryObject<MysteriousMaterial> MYSTERIOUS_MATERIAL_9 = ITEMS.register("mysterious_material_9", () -> new MysteriousMaterial(new Item.Properties(), new ItemStack(Items.DIAMOND), "tooltip.moreofeverything.mysterious_material_9"));
     public static final RegistryObject<MysteriousMaterial> MYSTERIOUS_MATERIAL_10 = ITEMS.register("mysterious_material_10", () -> new MysteriousMaterial(new Item.Properties(), new ItemStack(Items.DIAMOND), "tooltip.moreofeverything.mysterious_material_10"));
-    public static final RegistryObject<Item> BOTTLE_OF_STABILITY_ESSENCE = ITEMS.register("bottle_of_stability_essence", () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1).component(MOEDataComponentTypes.MATERIAL_DAMAGE.get(), 4).durability(32)));
-    public static final RegistryObject<Item> ARCANE_BOTTLE_OF_STABILITY_ESSENCE = ITEMS.register("arcane_bottle_of_stability_essence", () -> new Item(new Item.Properties().rarity(Rarity.RARE).stacksTo(1).component(MOEDataComponentTypes.MATERIAL_DAMAGE.get(), 2).durability(48)));
-    public static final RegistryObject<Item> SORCEROUS_BOTTLE_OF_STABILITY_ESSENCE = ITEMS.register("sorcerous_bottle_of_stability_essence", () -> new Item(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1).component(MOEDataComponentTypes.MATERIAL_DAMAGE.get(), 1).durability(64)));
+    public static final RegistryObject<Item> VIAL_OF_STABILITY_ESSENCE = ITEMS.register("vial_of_stability_essence", () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1).component(MOEDataComponentTypes.MATERIAL_DAMAGE.get(), 4).durability(32)));
+    public static final RegistryObject<Item> ARCANE_VIAL_OF_STABILITY_ESSENCE = ITEMS.register("arcane_vial_of_stability_essence", () -> new Item(new Item.Properties().rarity(Rarity.RARE).stacksTo(1).component(MOEDataComponentTypes.MATERIAL_DAMAGE.get(), 2).durability(48)));
+    public static final RegistryObject<Item> SORCEROUS_VIAL_OF_STABILITY_ESSENCE = ITEMS.register("sorcerous_vial_of_stability_essence", () -> new Item(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1).component(MOEDataComponentTypes.MATERIAL_DAMAGE.get(), 1).durability(64)));
 
     public static final RegistryObject<Item> NO_TIME_TO_WAIT_DISC = ITEMS.register("no_time_to_wait_music_disc", () -> new Item(new Item.Properties().jukeboxPlayable(MOESound.NO_TIME_TO_WAIT_KEY).stacksTo(1).rarity(Rarity.RARE)));
 
@@ -139,6 +139,9 @@ public class MOEItem {
     public static final RegistryObject<Item> STRANGE_MATTER = ITEMS.register("strange_matter", () -> new Item(new Item.Properties().stacksTo(16).rarity(Rarity.EPIC)));
 
     public static final RegistryObject<DustArrowItem> DUST_ARROW = ITEMS.register("dust_arrow", () -> new DustArrowItem(new Item.Properties().stacksTo(16)));
+
+    public static final RegistryObject<Item> REFINED_DIAMOND = ITEMS.register("refined_diamond", () -> new Item(new Item.Properties().stacksTo(16).rarity(Rarity.RARE)));
+    public static final RegistryObject<Item> REFINED_AMETHYST = ITEMS.register("refined_amethyst", () -> new Item(new Item.Properties().stacksTo(16).rarity(Rarity.RARE)));
 
     public static final RegistryObject<Item> UNOBTANIUM_INGOT = ITEMS.register("unobtainium_ingot", () -> new Item(new Item.Properties().stacksTo(128).rarity(Rarity.EPIC)));
 
