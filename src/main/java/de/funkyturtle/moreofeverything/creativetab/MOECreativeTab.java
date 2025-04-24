@@ -68,9 +68,9 @@ public class MOECreativeTab {
                 output.accept(MOEItem.AMMONITE.get());
                 output.accept(MOEItem.PREHISTORIC_SPEER_TIP.get());
                 output.accept(MOEItem.MEDIEVAL_COIN.get());
-                output.accept(MOEItem.BOTTLE_OF_STABILITY_ESSENCE.get());
-                output.accept(MOEItem.ARCANE_BOTTLE_OF_STABILITY_ESSENCE.get());
-                output.accept(MOEItem.SORCEROUS_BOTTLE_OF_STABILITY_ESSENCE.get());
+                output.accept(MOEItem.VIAL_OF_STABILITY_ESSENCE.get());
+                output.accept(MOEItem.ARCANE_VIAL_OF_STABILITY_ESSENCE.get());
+                output.accept(MOEItem.SORCEROUS_VIAL_OF_STABILITY_ESSENCE.get());
                 output.accept(MOEItem.CAUTIOUSTAL.get());
                 output.accept(MOEItem.BEWITCHING_CAUTIOUSTAL.get());
                 output.accept(MOEItem.ELDRITCH_CAUTIOUSTAL.get());
