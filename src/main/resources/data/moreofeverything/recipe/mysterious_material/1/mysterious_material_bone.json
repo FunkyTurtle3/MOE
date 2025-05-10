@@ -4,7 +4,10 @@
     "item": "moreofeverything:mysterious_material_2"
   },
   "result": {
-    "id": "moreofeverything:pulsite",
-    "count": 5
-  }
+    "id": "minecraft:bone",
+    "count": 1
+  },
+  "chance": 0.8,
+  "minimum": 1,
+  "maximum": 2
 }

@@ -12,7 +12,6 @@ import de.funkyturtle.moreofeverything.recipe.MOERecipeType;
 import de.funkyturtle.moreofeverything.util.MOETag;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.nbt.Tag;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -251,9 +250,9 @@ public class ArchaeologyMenu extends AbstractContainerMenu {
         setupRecipeList(inputSlot.getItem());
         if (!Recipes.isEmpty() && container.itemHandler.getStackInSlot(56).isEmpty()) {
             ItemStack itemstack = getWeightedRecipe().assemble(createRecipeInput(inputSlot.getItem()), this.level.registryAccess());
-            //CompoundTag tag = new CompoundTag();
-            //tag.putString("moreofeverything.gem_upgrade", "ruby");
-            //itemstack.set(DataComponents.CUSTOM_DATA, CustomData.of(tag));
+            CompoundTag tag = new CompoundTag();
+            tag.putString("moreofeverything.gem_upgrade", "ruby");
+            itemstack.set(DataComponents.CUSTOM_DATA, CustomData.of(tag));
             this.container.itemHandler.setStackInSlot(x + 38, itemstack);
         } else if(!Recipes.isEmpty()) this.container.itemHandler.setStackInSlot(x + 38, getRandomRecipe().assemble(createRecipeInput(inputSlot.getItem()), this.level.registryAccess()));
     }

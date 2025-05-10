@@ -4,7 +4,10 @@
     "item": "moreofeverything:mysterious_material_2"
   },
   "result": {
-    "id": "moreofeverything:amber",
-    "count": 4
-  }
+    "id": "minecraft:vines",
+    "count": 1
+  },
+  "chance": 1.0,
+  "minimum": 1,
+  "maximum": 2
 }

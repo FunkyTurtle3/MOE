@@ -65,9 +65,16 @@ public class MOECreativeTab {
                 output.accept(MOEItem.PULSITE.get());
                 output.accept(MOEItem.AMBER.get());
                 output.accept(MOEItem.SAPPHIRE.get());
+                output.accept(MOEItem.JADE.get());
+                output.accept(MOEItem.OPAL.get());
+                output.accept(MOEItem.RUBY.get());
+                output.accept(MOEItem.AMETRINE.get());
+                output.accept(MOEItem.GEM_UPGRADE_SMITHING_TEMPLATE.get());
                 output.accept(MOEItem.AMMONITE.get());
                 output.accept(MOEItem.PREHISTORIC_SPEER_TIP.get());
-                output.accept(MOEItem.MEDIEVAL_COIN.get());
+
+                output.accept(MOEItem.DUST_ARROW.get());
+
                 output.accept(MOEItem.VIAL_OF_STABILITY_ESSENCE.get());
                 output.accept(MOEItem.ARCANE_VIAL_OF_STABILITY_ESSENCE.get());
                 output.accept(MOEItem.SORCEROUS_VIAL_OF_STABILITY_ESSENCE.get());
@@ -97,7 +104,6 @@ public class MOECreativeTab {
                 output.accept(MOEItem.GOLDEN_POTATO.get());
                 output.accept(MOEItem.GOLDEN_BEETROOT.get());
                 output.accept(MOEItem.GOLDEN_KELP.get());
-                output.accept(MOEItem.SHRIMP.get());
                 output.accept(MOEItem.NO_TIME_TO_WAIT_DISC.get());
 
                 output.accept(MOEItem.ANCIENT_ARMOR_TRIM_SMITHING_TEMPLATE.get());

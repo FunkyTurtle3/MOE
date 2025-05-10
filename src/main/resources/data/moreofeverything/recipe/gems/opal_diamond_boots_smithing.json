@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "moreofeverything:opal"
+  },
+  "base": {
+    "item": "minecraft:diamond_boots"
+  },
+  "result": {
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "moreofeverything.gem_upgrade": "opal"
+      }
+    },
+    "id": "minecraft:diamond_boots"
+  },
+  "template": {
+    "item": "moreofeverything:gem_upgrade_smithing_template"
+  }
+}

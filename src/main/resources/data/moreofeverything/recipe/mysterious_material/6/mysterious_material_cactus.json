@@ -4,10 +4,10 @@
     "item": "moreofeverything:mysterious_material_6"
   },
   "result": {
-    "id": "moreofeverything:prehistoric_spear_tip",
+    "id": "minecraft:cactus",
     "count": 1
   },
-  "chance": 0.3,
+  "chance": 0.5,
   "minimum": 1,
-  "maximum": 1
+  "maximum": 3
 }

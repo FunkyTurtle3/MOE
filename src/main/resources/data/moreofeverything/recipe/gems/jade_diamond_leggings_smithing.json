@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "moreofeverything:jade"
+  },
+  "base": {
+    "item": "minecraft:diamond_leggings"
+  },
+  "result": {
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "moreofeverything.gem_upgrade": "jade"
+      }
+    },
+    "id": "minecraft:diamond_leggings"
+  },
+  "template": {
+    "item": "moreofeverything:gem_upgrade_smithing_template"
+  }
+}

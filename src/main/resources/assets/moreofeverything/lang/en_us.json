@@ -186,9 +186,9 @@
   "item.moreofeverything.mysterious_material_8": "Mysterious Material",
   "item.moreofeverything.mysterious_material_9": "Mysterious Material",
   "item.moreofeverything.mysterious_material_10": "Mysterious Material",
-  "item.moreofeverything.bottle_of_stability_essence": "Bottle of Stability Essence",
-  "item.moreofeverything.arcane_bottle_of_stability_essence": "Bottle of Arcane Stability Essence",
-  "item.moreofeverything.sorcerous_bottle_of_stability_essence": "Bottle of Sorcerous Stability Essence",
+  "item.moreofeverything.vial_of_stability_essence": "Vial of Stability Essence",
+  "item.moreofeverything.arcane_vial_of_stability_essence": "Vial of Arcane Stability Essence",
+  "item.moreofeverything.sorcerous_vial_of_stability_essence": "Vial of Sorcerous Stability Essence",
   "item.moreofeverything.gold_brush": "Golden Brush",
   "item.moreofeverything.iron_brush": "Iron Brush",
   "item.moreofeverything.diamond_brush": "Diamond Brush",
@@ -202,6 +202,11 @@
   "item.moreofeverything.dust_arrow": "Dust Arrow",
   "item.moreofeverything.refined_diamond": "Refined Diamond",
   "item.moreofeverything.refined_amethyst": "Refined Amethyst",
+  "item.moreofeverything.jade": "Jade",
+  "item.moreofeverything.opal": "Opal",
+  "item.moreofeverything.ruby": "Ruby",
+  "item.moreofeverything.ametrine": "Ametrine",
+  "item.moreofeverything.gem_upgrade_smithing_template": "Gem Upgrade Smithing Template",
 
 
   "entity.minecraft.villager.moreofeverything.apiarist": "Apiarist",
@@ -235,6 +240,13 @@
   "tooltip.moreofeverything.mysterious_material_8": "§bCan be found in Greenhouses",
   "tooltip.moreofeverything.mysterious_material_9": "§bCan be found in cold Ocean Ruins",
   "tooltip.moreofeverything.mysterious_material_10": "§bCan be found at Azurine Temples",
+  "tooltip.moreofeverything.sapphire_des": "§7Gem Upgrade: §9Sapphire",
+  "tooltip.moreofeverything.ametrine_des": "§7Gem Upgrade: §5Ametrine",
+  "tooltip.moreofeverything.ruby_des": "§7Gem Upgrade: §cRuby",
+  "tooltip.moreofeverything.pulsite_des": "§7Gem Upgrade: §bPulsite",
+  "tooltip.moreofeverything.jade_des": "§7Gem Upgrade: §aJade",
+  "tooltip.moreofeverything.amber_des": "§7Gem Upgrade: §6Amber",
+  "tooltip.moreofeverything.opal_des": "§7Gem Upgrade: §3Opal",
 
 
   "trim_pattern.moreofeverything.ancient": "Ancient Trim",

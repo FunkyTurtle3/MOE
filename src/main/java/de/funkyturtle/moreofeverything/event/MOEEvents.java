@@ -6,8 +6,13 @@ import de.funkyturtle.moreofeverything.item.MOEItem;
 import de.funkyturtle.moreofeverything.villager.MOEVillager;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraft.world.entity.player.Player;
@@ -22,8 +27,11 @@ import net.minecraft.world.level.block.entity.BrushableBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.event.entity.living.LivingEntityUseItemEvent;
+import net.minecraftforge.event.entity.living.LivingEquipmentChangeEvent;
+import net.minecraftforge.event.entity.player.ItemTooltipEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.event.village.VillagerTradesEvent;
@@ -50,6 +58,57 @@ public class MOEEvents {
         }
 
         @SubscribeEvent
+        public static void checkForArmor(LivingEquipmentChangeEvent event) {
+            LivingEntity entity = event.getEntity();
+            entity.removeEffect(MobEffects.GLOWING);
+            entity.setCustomName(Component.empty());
+            entity.setCustomNameVisible(false);
+            entity.removeEffect(MobEffects.WATER_BREATHING);
+            entity.removeEffect(MobEffects.DIG_SPEED);
+            entity.removeEffect(MobEffects.HERO_OF_THE_VILLAGE);
+            entity.removeEffect(MobEffects.MOVEMENT_SPEED);
+
+            if (entity.getItemBySlot(EquipmentSlot.HEAD).get(DataComponents.CUSTOM_DATA) != null) {
+                String material = entity.getItemBySlot(EquipmentSlot.HEAD).get(DataComponents.CUSTOM_DATA).copyTag().get("moreofeverything.gem_upgrade").getAsString();
+                if (material.equals("ametrine")) {
+                    String display = entity.getItemBySlot(EquipmentSlot.HEAD).getDisplayName().getString();
+                    entity.setCustomName(Component.literal(display.substring(1, display.length() - 1)));
+                    entity.setCustomNameVisible(true);
+                }
+                if(material.contains("sapphire")) {
+                    entity.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, -1, 0, false, false, false));
+                }
+            }
+
+            if(entity.getItemBySlot(EquipmentSlot.CHEST).get(DataComponents.CUSTOM_DATA) != null) {
+                String material = entity.getItemBySlot(EquipmentSlot.CHEST).get(DataComponents.CUSTOM_DATA).copyTag().get("moreofeverything.gem_upgrade").getAsString();
+                if(material.contains("ruby")) {
+                    entity.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, -1, 0, false, false, false));
+                } else entity.removeEffect(MobEffects.HEALTH_BOOST);
+                if(material.contains("pulsite")) {
+                    entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, -1, 0, false, false, false));
+                }
+            } else entity.removeEffect(MobEffects.HEALTH_BOOST);
+
+            if(entity.getItemBySlot(EquipmentSlot.LEGS).get(DataComponents.CUSTOM_DATA) != null) {
+                String material = entity.getItemBySlot(EquipmentSlot.LEGS).get(DataComponents.CUSTOM_DATA).copyTag().get("moreofeverything.gem_upgrade").getAsString();
+                if(material.contains("amber")) {
+                    entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, -1, 0, false, false, false));
+                }
+                if(material.contains("jade")) {
+                    entity.addEffect(new MobEffectInstance(MobEffects.HERO_OF_THE_VILLAGE, -1, 0, false, false, false));
+                }
+            }
+
+            if(entity.getItemBySlot(EquipmentSlot.FEET).get(DataComponents.CUSTOM_DATA) != null) {
+                String material = entity.getItemBySlot(EquipmentSlot.FEET).get(DataComponents.CUSTOM_DATA).copyTag().get("moreofeverything.gem_upgrade").getAsString();
+                if(material.contains("opal")) {
+                    entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, -1, 0, false, false, false));
+                }
+            }
+        }
+
+        @SubscribeEvent
         public static void registerBrush(PlayerInteractEvent.RightClickBlock event) {
             if (!event.getLevel().isClientSide() && event.getLevel().getBlockEntity(event.getPos()) instanceof MOEBrushableBlockEntity moeBrushableBlockEntity) {
                 boolean flag1 = moeBrushableBlockEntity.brush(event.getLevel().getGameTime(), event.getEntity(),  event.getHitVec().getDirection());
@@ -63,13 +122,58 @@ public class MOEEvents {
         }
 
         @SubscribeEvent
+        public static void showGemUpgrade(ItemTooltipEvent event) {
+            if (event.getItemStack().is(Tags.Items.ARMORS_HELMETS) && event.getItemStack().get(DataComponents.CUSTOM_DATA) != null) {
+                String material = event.getItemStack().get(DataComponents.CUSTOM_DATA).copyTag().getString("moreofeverything.gem_upgrade");
+                List<Component> tooltip = event.getToolTip();
+                if (material.equals("sapphire")) {
+                    addTooltip(tooltip, "tooltip.moreofeverything.sapphire_des");
+                } else if (material.equals("ametrine")) {
+                    addTooltip(tooltip, "tooltip.moreofeverything.ametrine_des");
+                }
+            }
+            if (event.getItemStack().is(Tags.Items.ARMORS_CHESTPLATES) && event.getItemStack().get(DataComponents.CUSTOM_DATA) != null) {
+                String material = event.getItemStack().get(DataComponents.CUSTOM_DATA).copyTag().getString("moreofeverything.gem_upgrade");
+                List<Component> tooltip = event.getToolTip();
+                if (material.equals("ruby")) {
+                    addTooltip(tooltip, "tooltip.moreofeverything.ruby_des");
+                } else if (material.equals("pulsite")) {
+                    addTooltip(tooltip, "tooltip.moreofeverything.pulsite_des");
+                }
+            }
+            if (event.getItemStack().is(Tags.Items.ARMORS_LEGGINGS) && event.getItemStack().get(DataComponents.CUSTOM_DATA) != null) {
+                String material = event.getItemStack().get(DataComponents.CUSTOM_DATA).copyTag().getString("moreofeverything.gem_upgrade");
+                List<Component> tooltip = event.getToolTip();
+                if (material.equals("amber")) {
+                    addTooltip(tooltip, "tooltip.moreofeverything.amber_des");
+                } else if (material.equals("jade")) {
+                    addTooltip(tooltip, "tooltip.moreofeverything.jade_des");
+                }
+            }
+            if (event.getItemStack().is(Tags.Items.ARMORS_BOOTS) && event.getItemStack().get(DataComponents.CUSTOM_DATA) != null) {
+                String material = event.getItemStack().get(DataComponents.CUSTOM_DATA).copyTag().getString("moreofeverything.gem_upgrade");
+                List<Component> tooltip = event.getToolTip();
+                if (material.equals("opal")) {
+                    addTooltip(tooltip, "tooltip.moreofeverything.opal_des");
+                }
+            }
+
+        }
+
+        public static void addTooltip(List<Component> tooltip ,String description) {
+            tooltip.add(tooltip.size() - 2, Component.empty());
+            tooltip.add(tooltip.size() - 2 ,Component.translatable(description));
+            tooltip.add(tooltip.size() - 2, Component.empty());
+        }
+
+        @SubscribeEvent
         public static void onRightClickHold(LivingEntityUseItemEvent.Tick event) {
             // Prüfen, ob der Spieler das richtige Item benutzt
             if (event.getEntity() instanceof Player player && event.getItem().getItem() instanceof BrushItem) {
 
                 // Prüfen, ob der Spieler mit dem richtigen Block interagiert
                 HitResult hitResult =  player.pick(5.0D, 0.0F, false);
-                BlockPos pos = new BlockPos(0, 0, 0);
+                BlockPos pos;
                 if (hitResult.getType() == HitResult.Type.BLOCK) {
                     BlockHitResult blockHitResult = (BlockHitResult) hitResult;
                     pos = blockHitResult.getBlockPos(); // BlockPos wird gesetzt

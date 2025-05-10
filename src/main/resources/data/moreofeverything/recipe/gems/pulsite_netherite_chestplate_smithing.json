@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "moreofeverything:pulsite"
+  },
+  "base": {
+    "item": "minecraft:netherite_chestplate"
+  },
+  "result": {
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "moreofeverything.gem_upgrade": "pulsite"
+      }
+    },
+    "id": "minecraft:netherite_chestplate"
+  },
+  "template": {
+    "item": "moreofeverything:gem_upgrade_smithing_template"
+  }
+}

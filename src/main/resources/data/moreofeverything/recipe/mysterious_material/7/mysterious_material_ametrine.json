@@ -1,0 +1,13 @@
+{
+  "type": "moreofeverything:archaeology_recipe",
+  "ingredient": {
+    "item": "moreofeverything:mysterious_material_7"
+  },
+  "result": {
+    "id": "moreofeverything:ametrine",
+    "count": 1
+  },
+  "chance": 0.1,
+  "minimum": 1,
+  "maximum": 1
+}

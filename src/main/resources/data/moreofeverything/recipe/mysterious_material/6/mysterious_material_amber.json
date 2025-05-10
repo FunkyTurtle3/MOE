@@ -1,13 +1,13 @@
 {
   "type": "moreofeverything:archaeology_recipe",
   "ingredient": {
-    "item": "moreofeverything:mysterious_material_1"
+    "item": "moreofeverything:mysterious_material_6"
   },
   "result": {
-    "id": "moreofeverything:sapphire",
+    "id": "moreofeverything:amber",
     "count": 1
   },
   "chance": 0.1,
   "minimum": 1,
-  "maximum": 5
+  "maximum": 1
 }

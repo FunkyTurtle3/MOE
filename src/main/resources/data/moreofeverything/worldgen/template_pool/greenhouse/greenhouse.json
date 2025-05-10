@@ -3,7 +3,16 @@
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "moreofeverything:greenhouse/greenhouse",
+        "location": "moreofeverything:greenhouse/greenhouse_dark_oak",
+        "processors": "minecraft:mossify_10_percent",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "moreofeverything:greenhouse/greenhouse_deepslate",
         "processors": "minecraft:mossify_10_percent",
         "projection": "rigid"
       },

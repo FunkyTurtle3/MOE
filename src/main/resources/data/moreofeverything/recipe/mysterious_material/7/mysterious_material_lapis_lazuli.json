@@ -1,0 +1,13 @@
+{
+  "type": "moreofeverything:archaeology_recipe",
+  "ingredient": {
+    "item": "moreofeverything:mysterious_material_7"
+  },
+  "result": {
+    "id": "minecraft:lapis_lazuli",
+    "count": 1
+  },
+  "chance": 0.8,
+  "minimum": 2,
+  "maximum": 3
+}

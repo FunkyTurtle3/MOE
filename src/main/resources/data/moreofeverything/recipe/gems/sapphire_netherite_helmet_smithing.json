@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "moreofeverything:sapphire"
+  },
+  "base": {
+    "item": "minecraft:netherite_helmet"
+  },
+  "result": {
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "moreofeverything.gem_upgrade": "sapphire"
+      }
+    },
+    "id": "minecraft:netherite_helmet"
+  },
+  "template": {
+    "item": "moreofeverything:gem_upgrade_smithing_template"
+  }
+}
